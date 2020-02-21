@@ -15,6 +15,7 @@
 		23B4B3B823FD64D50015AF84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B4B3B623FD64D50015AF84 /* LaunchScreen.storyboard */; };
 		23B4B3C323FD64D60015AF84 /* AutoPilotExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3C223FD64D60015AF84 /* AutoPilotExampleTests.swift */; };
 		23B4B3CE23FD64D60015AF84 /* AutoPilotExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3CD23FD64D60015AF84 /* AutoPilotExampleUITests.swift */; };
+		483B57F724002E98001C3702 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57F624002E98001C3702 /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		23B4B3C923FD64D60015AF84 /* AutoPilotExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoPilotExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B4B3CD23FD64D60015AF84 /* AutoPilotExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoPilotExampleUITests.swift; sourceTree = "<group>"; };
 		23B4B3CF23FD64D60015AF84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		483B57F624002E98001C3702 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */,
 				23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */,
 				23B4B3AF23FD64CC0015AF84 /* ViewController.swift */,
+				483B57F624002E98001C3702 /* CalendarView.swift */,
 				23B4B3B123FD64CC0015AF84 /* Main.storyboard */,
 				23B4B3B423FD64D50015AF84 /* Assets.xcassets */,
 				23B4B3B623FD64D50015AF84 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				23B4B3B023FD64CC0015AF84 /* ViewController.swift in Sources */,
 				23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */,
+				483B57F724002E98001C3702 /* CalendarView.swift in Sources */,
 				23B4B3AE23FD64CC0015AF84 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
