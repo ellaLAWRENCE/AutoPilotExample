@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23B4B3A823FD64CC0015AF84 /* AutoPilotExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPilotExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B4B3A823FD64CC0015AF84 /* AutoPilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		23B4B3AF23FD64CC0015AF84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		23B4B3A923FD64CC0015AF84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23B4B3A823FD64CC0015AF84 /* AutoPilotExample.app */,
+				23B4B3A823FD64CC0015AF84 /* AutoPilot.app */,
 				23B4B3BE23FD64D60015AF84 /* AutoPilotExampleTests.xctest */,
 				23B4B3C923FD64D60015AF84 /* AutoPilotExampleUITests.xctest */,
 			);
@@ -145,7 +145,7 @@
 			);
 			name = AutoPilotExample;
 			productName = AutoPilotExample;
-			productReference = 23B4B3A823FD64CC0015AF84 /* AutoPilotExample.app */;
+			productReference = 23B4B3A823FD64CC0015AF84 /* AutoPilot.app */;
 			productType = "com.apple.product-type.application";
 		};
 		23B4B3BD23FD64D60015AF84 /* AutoPilotExampleTests */ = {
@@ -442,7 +442,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppPractice.AutoPilotExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AutoPilot;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,7 +460,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppPractice.AutoPilotExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AutoPilot;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
