@@ -176,7 +176,10 @@ class CalendarView: UIViewController, UICollectionViewDelegate, UICollectionView
         MonthLabel.text = "\(currentMonth) \(year)"
         
     }
-
+    @IBAction func addEvent(_ sender: UIButton) {
+        
+    }
+    
 
 }
 
