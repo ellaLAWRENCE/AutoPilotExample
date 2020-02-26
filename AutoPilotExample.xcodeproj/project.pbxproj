@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */; };
 		23B4B3AE23FD64CC0015AF84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */; };
-		23B4B3B023FD64CC0015AF84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3AF23FD64CC0015AF84 /* ViewController.swift */; };
 		23B4B3B323FD64CC0015AF84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B4B3B123FD64CC0015AF84 /* Main.storyboard */; };
 		23B4B3B523FD64D50015AF84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B4B3B423FD64D50015AF84 /* Assets.xcassets */; };
 		23B4B3B823FD64D50015AF84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B4B3B623FD64D50015AF84 /* LaunchScreen.storyboard */; };
 		23B4B3C323FD64D60015AF84 /* AutoPilotExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3C223FD64D60015AF84 /* AutoPilotExampleTests.swift */; };
 		23B4B3CE23FD64D60015AF84 /* AutoPilotExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3CD23FD64D60015AF84 /* AutoPilotExampleUITests.swift */; };
+		23C10BF72406AF2500F9EC79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C10BF62406AF2500F9EC79 /* ViewController.swift */; };
+		23C10BF92406AF3A00F9EC79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C10BF82406AF3A00F9EC79 /* LoginViewController.swift */; };
+		23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */; };
 		483B57F724002E98001C3702 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57F624002E98001C3702 /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +41,6 @@
 		23B4B3A823FD64CC0015AF84 /* AutoPilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23B4B3AF23FD64CC0015AF84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23B4B3B223FD64CC0015AF84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23B4B3B423FD64D50015AF84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23B4B3B723FD64D50015AF84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +51,9 @@
 		23B4B3C923FD64D60015AF84 /* AutoPilotExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoPilotExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B4B3CD23FD64D60015AF84 /* AutoPilotExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoPilotExampleUITests.swift; sourceTree = "<group>"; };
 		23B4B3CF23FD64D60015AF84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23C10BF62406AF2500F9EC79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23C10BF82406AF3A00F9EC79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		483B57F624002E98001C3702 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,12 +107,14 @@
 			children = (
 				23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */,
 				23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */,
-				23B4B3AF23FD64CC0015AF84 /* ViewController.swift */,
 				483B57F624002E98001C3702 /* CalendarView.swift */,
 				23B4B3B123FD64CC0015AF84 /* Main.storyboard */,
 				23B4B3B423FD64D50015AF84 /* Assets.xcassets */,
 				23B4B3B623FD64D50015AF84 /* LaunchScreen.storyboard */,
 				23B4B3B923FD64D50015AF84 /* Info.plist */,
+				23C10BF62406AF2500F9EC79 /* ViewController.swift */,
+				23C10BF82406AF3A00F9EC79 /* LoginViewController.swift */,
+				23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */,
 			);
 			path = AutoPilotExample;
 			sourceTree = "<group>";
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B4B3B023FD64CC0015AF84 /* ViewController.swift in Sources */,
 				23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */,
 				483B57F724002E98001C3702 /* CalendarView.swift in Sources */,
+				23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */,
+				23C10BF72406AF2500F9EC79 /* ViewController.swift in Sources */,
+				23C10BF92406AF3A00F9EC79 /* LoginViewController.swift in Sources */,
 				23B4B3AE23FD64CC0015AF84 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
