@@ -67,32 +67,32 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X94-2H-Msv">
-                                <rect key="frame" x="50" y="234" width="314" height="34"/>
+                                <rect key="frame" x="50" y="212" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="QxT-4y-FlR">
-                                <rect key="frame" x="50" y="123" width="314" height="44"/>
+                                <rect key="frame" x="50" y="123" width="314.00000000000011" height="22"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="f9b-mB-LmM">
-                                <rect key="frame" x="50" y="260" width="314" height="44"/>
+                                <rect key="frame" x="50" y="238" width="314.00000000000011" height="22"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOP-Et-cfC">
-                                <rect key="frame" x="50" y="187" width="98" height="27"/>
+                                <rect key="frame" x="50" y="165" width="98" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AkC-tS-TLq">
-                                <rect key="frame" x="50" y="371" width="314" height="34"/>
+                                <rect key="frame" x="50" y="327" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="ibk-8i-ZaD">
-                                <rect key="frame" x="50" y="397" width="314" height="44"/>
+                                <rect key="frame" x="50" y="353" width="314.00000000000011" height="22"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTb-Hg-gIB">
-                                <rect key="frame" x="50" y="324" width="92" height="27"/>
+                                <rect key="frame" x="50" y="280" width="92" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -101,6 +101,9 @@
                                 <rect key="frame" x="164" y="716" width="86" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUpButtonTouched:" destination="JWW-wu-Q2b" eventType="touchUpInside" id="c92-bk-oAD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -135,6 +138,12 @@
                         <viewLayoutGuide key="safeArea" id="8E4-WE-IDc"/>
                     </view>
                     <navigationItem key="navigationItem" id="z3c-vB-7le"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="jsd-Zv-C8h" id="smX-UU-E4d"/>
+                        <outlet property="passwordTextField" destination="AkC-tS-TLq" id="Twz-Wb-tnE"/>
+                        <outlet property="signUpButton" destination="I32-ba-5Ks" id="PTB-f2-FgR"/>
+                        <outlet property="userNameTextField" destination="X94-2H-Msv" id="mlI-e7-ODO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HmW-cP-YPU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -160,18 +169,18 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oeW-sC-HUn">
-                                <rect key="frame" x="50" y="234" width="314" height="34"/>
+                                <rect key="frame" x="50" y="212" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="dIo-Sp-1LA">
-                                <rect key="frame" x="50" y="123" width="314" height="44"/>
+                                <rect key="frame" x="50" y="123" width="314.00000000000011" height="22"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="yMP-bc-3Ja">
-                                <rect key="frame" x="50" y="260" width="314" height="44"/>
+                                <rect key="frame" x="50" y="238" width="314.00000000000011" height="22"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndu-MN-3EL">
-                                <rect key="frame" x="50" y="187" width="92" height="27"/>
+                                <rect key="frame" x="50" y="165" width="92" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -180,6 +189,9 @@
                                 <rect key="frame" x="174" y="716" width="66" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="loginButtonTouched:" destination="BHq-uf-Y9E" eventType="touchUpInside" id="FX5-LO-gt2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -206,6 +218,11 @@
                         <viewLayoutGuide key="safeArea" id="f2V-rS-TLc"/>
                     </view>
                     <navigationItem key="navigationItem" id="F0i-jH-eM4"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="BK6-A5-TZe" id="5Tl-P0-Tma"/>
+                        <outlet property="loginButton" destination="za2-5x-S4r" id="Rvg-oV-obp"/>
+                        <outlet property="passwordTextField" destination="oeW-sC-HUn" id="4Hi-Ie-Moc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OTl-1Z-brg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
