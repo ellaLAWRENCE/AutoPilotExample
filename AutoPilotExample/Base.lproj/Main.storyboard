@@ -438,6 +438,12 @@
                         <viewLayoutGuide key="safeArea" id="2Bv-2k-9ch"/>
                     </view>
                     <navigationItem key="navigationItem" id="b0O-4Z-tq5"/>
+                    <connections>
+                        <outlet property="assignmentNameText" destination="du6-In-Quz" id="tWA-tC-1PN"/>
+                        <outlet property="dueDateText" destination="Fyb-ML-6rx" id="WUn-ST-d1z"/>
+                        <outlet property="durationText" destination="5HF-i9-laO" id="3UN-D6-EJQ"/>
+                        <outlet property="startDateText" destination="bot-kO-Ldu" id="lQA-dP-AF2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVM-y4-I4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
