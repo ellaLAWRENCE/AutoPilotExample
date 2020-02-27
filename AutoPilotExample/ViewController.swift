@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        if let _ = Auth.auth().currentUser{
-            self.performSegue(withIdentifier: "toHomeScreen", sender: self)
-        }
+//        if let _ = Auth.auth().currentUser{
+//            self.performSegue(withIdentifier: "toHomeScreen", sender: self)
+//        }
         
     }
 
