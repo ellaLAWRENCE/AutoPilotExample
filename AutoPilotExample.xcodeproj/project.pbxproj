@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		483B57F724002E98001C3702 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57F624002E98001C3702 /* CalendarView.swift */; };
 		483B57F92406B31D001C3702 /* calendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57F82406B31D001C3702 /* calendarVars.swift */; };
 		483B57FB2406B36A001C3702 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */; };
+		485DBA4F240812C5003156D1 /* addEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DBA4E240812C5003156D1 /* addEvent.swift */; };
 		6727331FABAD3B843A7D68BD /* Pods_AutoPilotExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF5A26904656A8B6B82F583 /* Pods_AutoPilotExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		483B57F624002E98001C3702 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		483B57F82406B31D001C3702 /* calendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarVars.swift; sourceTree = "<group>"; };
 		483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		485DBA4E240812C5003156D1 /* addEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEvent.swift; sourceTree = "<group>"; };
 		9B55504453429E762725F7E3 /* Pods-AutoPilotExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPilotExample.release.xcconfig"; path = "Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample.release.xcconfig"; sourceTree = "<group>"; };
 		F8E081E1F3FD40CAF16A06EE /* Pods-AutoPilotExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPilotExample.debug.xcconfig"; path = "Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 				483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */,
 				483B57F82406B31D001C3702 /* calendarVars.swift */,
 				23B4B3B123FD64CC0015AF84 /* Main.storyboard */,
+				485DBA4E240812C5003156D1 /* addEvent.swift */,
 				23B4B3B423FD64D50015AF84 /* Assets.xcassets */,
 				23B4B3B623FD64D50015AF84 /* LaunchScreen.storyboard */,
 				23B4B3B923FD64D50015AF84 /* Info.plist */,
@@ -159,7 +162,6 @@
 				F8E081E1F3FD40CAF16A06EE /* Pods-AutoPilotExample.debug.xcconfig */,
 				9B55504453429E762725F7E3 /* Pods-AutoPilotExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -352,6 +354,7 @@
 				483B57F92406B31D001C3702 /* calendarVars.swift in Sources */,
 				483B57FB2406B36A001C3702 /* DataCollectionViewCell.swift in Sources */,
 				23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */,
+				485DBA4F240812C5003156D1 /* addEvent.swift in Sources */,
 				23C10BF72406AF2500F9EC79 /* ViewController.swift in Sources */,
 				23C10BF92406AF3A00F9EC79 /* LoginViewController.swift in Sources */,
 				23B4B3AE23FD64CC0015AF84 /* SceneDelegate.swift in Sources */,
