@@ -9,20 +9,21 @@
 import UIKit
 import FirebaseAuth
 
-class ViewController: UIViewController {
+class addEvent: UIViewController {
 
+    @IBOutlet weak var assignmentNameText: UITextField!
+    @IBOutlet weak var durationText: UITextField!
+    @IBOutlet weak var startDateText: UITextField!
+    @IBOutlet weak var dueDateText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
-
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-//        if let _ = Auth.auth().currentUser{
-//            self.performSegue(withIdentifier: "toHomeScreen", sender: self)
-//        }
         
     }
 
