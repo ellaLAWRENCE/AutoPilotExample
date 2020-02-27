@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */; };
 		23B4B3AE23FD64CC0015AF84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */; };
-		23B4B3B023FD64CC0015AF84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3AF23FD64CC0015AF84 /* ViewController.swift */; };
 		23B4B3B323FD64CC0015AF84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B4B3B123FD64CC0015AF84 /* Main.storyboard */; };
 		23B4B3B523FD64D50015AF84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B4B3B423FD64D50015AF84 /* Assets.xcassets */; };
 		23B4B3B823FD64D50015AF84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B4B3B623FD64D50015AF84 /* LaunchScreen.storyboard */; };
 		23B4B3C323FD64D60015AF84 /* AutoPilotExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3C223FD64D60015AF84 /* AutoPilotExampleTests.swift */; };
 		23B4B3CE23FD64D60015AF84 /* AutoPilotExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3CD23FD64D60015AF84 /* AutoPilotExampleUITests.swift */; };
+		23C10BF72406AF2500F9EC79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C10BF62406AF2500F9EC79 /* ViewController.swift */; };
+		23C10BF92406AF3A00F9EC79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C10BF82406AF3A00F9EC79 /* LoginViewController.swift */; };
+		23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */; };
+		23C10C032406CB6600F9EC79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23C10C022406CB6600F9EC79 /* GoogleService-Info.plist */; };
+		483B57F724002E98001C3702 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57F624002E98001C3702 /* CalendarView.swift */; };
+		483B57F92406B31D001C3702 /* calendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57F82406B31D001C3702 /* calendarVars.swift */; };
+		483B57FB2406B36A001C3702 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */; };
+		6727331FABAD3B843A7D68BD /* Pods_AutoPilotExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF5A26904656A8B6B82F583 /* Pods_AutoPilotExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23B4B3A823FD64CC0015AF84 /* AutoPilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF5A26904656A8B6B82F583 /* Pods_AutoPilotExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPilotExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B4B3A823FD64CC0015AF84 /* AutoPilotExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPilotExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23B4B3AF23FD64CC0015AF84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23B4B3B223FD64CC0015AF84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23B4B3B423FD64D50015AF84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23B4B3B723FD64D50015AF84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,15 @@
 		23B4B3C923FD64D60015AF84 /* AutoPilotExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoPilotExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B4B3CD23FD64D60015AF84 /* AutoPilotExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoPilotExampleUITests.swift; sourceTree = "<group>"; };
 		23B4B3CF23FD64D60015AF84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23C10BF62406AF2500F9EC79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23C10BF82406AF3A00F9EC79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		23C10C022406CB6600F9EC79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		483B57F624002E98001C3702 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		483B57F82406B31D001C3702 /* calendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarVars.swift; sourceTree = "<group>"; };
+		483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B55504453429E762725F7E3 /* Pods-AutoPilotExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPilotExample.release.xcconfig"; path = "Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample.release.xcconfig"; sourceTree = "<group>"; };
+		F8E081E1F3FD40CAF16A06EE /* Pods-AutoPilotExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPilotExample.debug.xcconfig"; path = "Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6727331FABAD3B843A7D68BD /* Pods_AutoPilotExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,13 +100,15 @@
 				23B4B3C123FD64D60015AF84 /* AutoPilotExampleTests */,
 				23B4B3CC23FD64D60015AF84 /* AutoPilotExampleUITests */,
 				23B4B3A923FD64CC0015AF84 /* Products */,
+				2BFF2E8FF46F3C33DA34CDF8 /* Pods */,
+				FBC164E276ED6AA381B3481A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		23B4B3A923FD64CC0015AF84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23B4B3A823FD64CC0015AF84 /* AutoPilot.app */,
+				23B4B3A823FD64CC0015AF84 /* AutoPilotExample.app */,
 				23B4B3BE23FD64D60015AF84 /* AutoPilotExampleTests.xctest */,
 				23B4B3C923FD64D60015AF84 /* AutoPilotExampleUITests.xctest */,
 			);
@@ -101,11 +120,17 @@
 			children = (
 				23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */,
 				23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */,
-				23B4B3AF23FD64CC0015AF84 /* ViewController.swift */,
+				483B57F624002E98001C3702 /* CalendarView.swift */,
+				483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */,
+				483B57F82406B31D001C3702 /* calendarVars.swift */,
 				23B4B3B123FD64CC0015AF84 /* Main.storyboard */,
 				23B4B3B423FD64D50015AF84 /* Assets.xcassets */,
 				23B4B3B623FD64D50015AF84 /* LaunchScreen.storyboard */,
 				23B4B3B923FD64D50015AF84 /* Info.plist */,
+				23C10C022406CB6600F9EC79 /* GoogleService-Info.plist */,
+				23C10BF62406AF2500F9EC79 /* ViewController.swift */,
+				23C10BF82406AF3A00F9EC79 /* LoginViewController.swift */,
+				23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */,
 			);
 			path = AutoPilotExample;
 			sourceTree = "<group>";
@@ -128,6 +153,24 @@
 			path = AutoPilotExampleUITests;
 			sourceTree = "<group>";
 		};
+		2BFF2E8FF46F3C33DA34CDF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8E081E1F3FD40CAF16A06EE /* Pods-AutoPilotExample.debug.xcconfig */,
+				9B55504453429E762725F7E3 /* Pods-AutoPilotExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FBC164E276ED6AA381B3481A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5A26904656A8B6B82F583 /* Pods_AutoPilotExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23B4B3D223FD64D60015AF84 /* Build configuration list for PBXNativeTarget "AutoPilotExample" */;
 			buildPhases = (
+				A2B3F0D8F1C3F44E0AA85B8A /* [CP] Check Pods Manifest.lock */,
 				23B4B3A423FD64CC0015AF84 /* Sources */,
 				23B4B3A523FD64CC0015AF84 /* Frameworks */,
 				23B4B3A623FD64CC0015AF84 /* Resources */,
+				07A44A2D786E14497B7414E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,7 +190,7 @@
 			);
 			name = AutoPilotExample;
 			productName = AutoPilotExample;
-			productReference = 23B4B3A823FD64CC0015AF84 /* AutoPilot.app */;
+			productReference = 23B4B3A823FD64CC0015AF84 /* AutoPilotExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		23B4B3BD23FD64D60015AF84 /* AutoPilotExampleTests */ = {
@@ -233,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23B4B3B823FD64D50015AF84 /* LaunchScreen.storyboard in Resources */,
+				23C10C032406CB6600F9EC79 /* GoogleService-Info.plist in Resources */,
 				23B4B3B523FD64D50015AF84 /* Assets.xcassets in Resources */,
 				23B4B3B323FD64CC0015AF84 /* Main.storyboard in Resources */,
 			);
@@ -254,13 +300,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07A44A2D786E14497B7414E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2B3F0D8F1C3F44E0AA85B8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoPilotExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23B4B3A423FD64CC0015AF84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B4B3B023FD64CC0015AF84 /* ViewController.swift in Sources */,
 				23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */,
+				483B57F724002E98001C3702 /* CalendarView.swift in Sources */,
+				483B57F92406B31D001C3702 /* calendarVars.swift in Sources */,
+				483B57FB2406B36A001C3702 /* DataCollectionViewCell.swift in Sources */,
+				23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */,
+				23C10BF72406AF2500F9EC79 /* ViewController.swift in Sources */,
+				23C10BF92406AF3A00F9EC79 /* LoginViewController.swift in Sources */,
 				23B4B3AE23FD64CC0015AF84 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +525,7 @@
 		};
 		23B4B3D323FD64D60015AF84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8E081E1F3FD40CAF16A06EE /* Pods-AutoPilotExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,7 +536,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppPractice.AutoPilotExample;
-				PRODUCT_NAME = AutoPilot;
+				PRODUCT_NAME = AutoPilotExample;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,6 +544,7 @@
 		};
 		23B4B3D423FD64D60015AF84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B55504453429E762725F7E3 /* Pods-AutoPilotExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,7 +555,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppPractice.AutoPilotExample;
-				PRODUCT_NAME = AutoPilot;
+				PRODUCT_NAME = AutoPilotExample;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
