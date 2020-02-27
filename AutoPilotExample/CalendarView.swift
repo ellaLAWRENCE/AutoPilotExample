@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CalendarView.swift
 //  calendar
 //
 //  Created by Emily Shang (student LM) on 1/15/20.
@@ -10,7 +10,6 @@ import UIKit
 
 class CalendarView: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-
     @IBOutlet weak var MonthLabel: UILabel!
     @IBOutlet weak var Controller: UICollectionView!
     let Months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"]
@@ -176,10 +175,6 @@ class CalendarView: UIViewController, UICollectionViewDelegate, UICollectionView
         MonthLabel.text = "\(currentMonth) \(year)"
         
     }
-    @IBAction func addEvent(_ sender: UIButton) {
-        
-    }
-    
 
 }
 
