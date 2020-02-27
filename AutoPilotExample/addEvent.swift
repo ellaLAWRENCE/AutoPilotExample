@@ -18,6 +18,7 @@ class addEvent: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("addevent")
         
     }
     
