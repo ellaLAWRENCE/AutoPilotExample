@@ -13,9 +13,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("voice")
     }
-    
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
