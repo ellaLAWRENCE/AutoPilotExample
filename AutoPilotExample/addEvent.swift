@@ -27,5 +27,10 @@ class addEvent: UIViewController {
         
         
     }
-
+    
+    
+    @IBAction func addNow(_ sender: UIButton) {
+        
+    }
+    
 }

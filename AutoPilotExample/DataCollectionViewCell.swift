@@ -10,5 +10,7 @@ import UIKit
 
 class DataCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var eventLabel: UILabel!
     @IBOutlet weak var DataLabel: UILabel!
+    
 }
