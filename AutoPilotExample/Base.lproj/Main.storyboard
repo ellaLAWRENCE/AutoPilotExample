@@ -440,7 +440,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpY-xA-L4r">
-                                <rect key="frame" x="170" y="608" width="75" height="30"/>
+                                <rect key="frame" x="169.5" y="608" width="75" height="30"/>
                                 <state key="normal" title="Add Event!"/>
                                 <connections>
                                     <action selector="addNow:" destination="c4q-8G-AG0" eventType="touchUpInside" id="fMl-TT-YZU"/>
