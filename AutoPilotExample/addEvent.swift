@@ -9,12 +9,13 @@
 import UIKit
 import FirebaseAuth
 
-class addEvent: UIViewController {
+class addEvent: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var assignmentNameText: UITextField!
     @IBOutlet weak var durationText: UITextField!
     @IBOutlet weak var startDateText: UITextField!
     @IBOutlet weak var dueDateText: UITextField!
+    @IBOutlet var addEventButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,31 @@ class addEvent: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        assignmentNameText.delegate = self
+        durationText.delegate = self
+        startDateText.delegate = self
+        dueDateText.delegate = self
+        assignmentNameText.becomeFirstResponder()
         
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if assignmentNameText.isFirstResponder{
+            durationText.becomeFirstResponder()
+        }
+        else if durationText.isFirstResponder{
+            startDateText.becomeFirstResponder()
+        }
+        else if startDateText.isFirstResponder{
+            dueDateText.becomeFirstResponder()
+        }
+        else {
+            dueDateText.resignFirstResponder()
+            addEventButton.isEnabled = true
+        }
+        
+        return true
     }
     
     

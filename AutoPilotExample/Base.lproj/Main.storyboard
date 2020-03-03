@@ -439,7 +439,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpY-xA-L4r">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpY-xA-L4r">
                                 <rect key="frame" x="169.5" y="608" width="75" height="30"/>
                                 <state key="normal" title="Add Event!"/>
                                 <connections>
@@ -477,6 +477,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="b0O-4Z-tq5"/>
                     <connections>
+                        <outlet property="addEventButton" destination="TpY-xA-L4r" id="zU1-Wb-TYD"/>
                         <outlet property="assignmentNameText" destination="du6-In-Quz" id="tWA-tC-1PN"/>
                         <outlet property="dueDateText" destination="Fyb-ML-6rx" id="WUn-ST-d1z"/>
                         <outlet property="durationText" destination="5HF-i9-laO" id="3UN-D6-EJQ"/>
@@ -492,6 +493,6 @@
         <image name="line" width="644" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WGZ-eU-iPS"/>
+        <segue reference="1s2-Rw-89O"/>
     </inferredMetricsTieBreakers>
 </document>
