@@ -258,24 +258,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5v-8e-ktY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5v-8e-ktY">
                                                     <rect key="frame" x="-0.5" y="21.5" width="51" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfC-jJ-12V">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfC-jJ-12V">
                                                     <rect key="frame" x="8" y="5" width="59" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="EfC-jJ-12V" firstAttribute="top" secondItem="FQb-b6-PwX" secondAttribute="top" constant="5" id="Tlf-vD-fX6"/>
-                                                <constraint firstItem="L5v-8e-ktY" firstAttribute="centerX" secondItem="FQb-b6-PwX" secondAttribute="centerX" id="hEf-a6-1qH"/>
                                                 <constraint firstAttribute="bottom" secondItem="L5v-8e-ktY" secondAttribute="bottom" constant="8" id="kqe-M0-YoD"/>
-                                                <constraint firstItem="EfC-jJ-12V" firstAttribute="leading" secondItem="FQb-b6-PwX" secondAttribute="leading" constant="8" id="tQU-xq-d9Z"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
@@ -493,6 +491,7 @@
         <image name="line" width="644" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="y1x-hf-48X"/>
         <segue reference="1s2-Rw-89O"/>
     </inferredMetricsTieBreakers>
 </document>
