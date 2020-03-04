@@ -55,6 +55,10 @@ class addEvent: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func addNow(_ sender: UIButton) {
+        var timeLeft = [Int]()
+        let dateFormatter = DateFormatter()
+        
+//        if let t=0...
         
     }
     
