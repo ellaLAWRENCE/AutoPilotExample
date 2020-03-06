@@ -16,7 +16,6 @@ class addEvent: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var startDateText: UITextField!
     @IBOutlet weak var dueDateText: UITextField!
     @IBOutlet var addEventButton: UIButton!
-    let event = ourEvent("Hello", 23)
     
     override func viewDidLoad() {
         super.viewDidLoad()
