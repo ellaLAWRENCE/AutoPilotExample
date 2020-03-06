@@ -491,6 +491,7 @@
         <image name="line" width="644" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="y1x-hf-48X"/>
         <segue reference="1s2-Rw-89O"/>
     </inferredMetricsTieBreakers>
 </document>

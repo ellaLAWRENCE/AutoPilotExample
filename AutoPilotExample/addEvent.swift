@@ -58,7 +58,6 @@ class addEvent: UIViewController, UITextFieldDelegate {
         var timeLeft = [Int]()
         let dateFormatter = DateFormatter()
         
-//        if let t=0...
         
     }
     
