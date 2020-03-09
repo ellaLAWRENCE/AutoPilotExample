@@ -11,6 +11,8 @@ import EventKit
 
 class eventListViewController: UIViewController {
 
+    var todayEvents :  [ourEvent] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

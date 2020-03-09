@@ -21,6 +21,7 @@
 		483B57F724002E98001C3702 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57F624002E98001C3702 /* CalendarView.swift */; };
 		483B57F92406B31D001C3702 /* calendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57F82406B31D001C3702 /* calendarVars.swift */; };
 		483B57FB2406B36A001C3702 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */; };
+		48509E322416782C00CA622E /* eventListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48509E312416782C00CA622E /* eventListTableView.swift */; };
 		4856554924127F5B005560A2 /* eventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856554824127F5B005560A2 /* eventListViewController.swift */; };
 		4856554B2412817B005560A2 /* ourEventObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856554A2412817B005560A2 /* ourEventObject.swift */; };
 		485DBA4F240812C5003156D1 /* addEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DBA4E240812C5003156D1 /* addEvent.swift */; };
@@ -66,6 +67,7 @@
 		483B57F624002E98001C3702 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		483B57F82406B31D001C3702 /* calendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarVars.swift; sourceTree = "<group>"; };
 		483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		48509E312416782C00CA622E /* eventListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventListTableView.swift; sourceTree = "<group>"; };
 		4856554724127EAC005560A2 /* eventList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = eventList.storyboard; path = /Users/s014294/Desktop/CompsciSeminar/AutoPilotExample/AutoPilotExample/eventList.storyboard; sourceTree = "<absolute>"; };
 		4856554824127F5B005560A2 /* eventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventListViewController.swift; sourceTree = "<group>"; };
 		4856554A2412817B005560A2 /* ourEventObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ourEventObject.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */,
 				4856554724127EAC005560A2 /* eventList.storyboard */,
 				4856554824127F5B005560A2 /* eventListViewController.swift */,
+				48509E312416782C00CA622E /* eventListTableView.swift */,
 				4856554A2412817B005560A2 /* ourEventObject.swift */,
 				23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */,
 				483B57F624002E98001C3702 /* CalendarView.swift */,
@@ -365,6 +368,7 @@
 				485DBA4F240812C5003156D1 /* addEvent.swift in Sources */,
 				23C10BF72406AF2500F9EC79 /* ViewController.swift in Sources */,
 				4856554924127F5B005560A2 /* eventListViewController.swift in Sources */,
+				48509E322416782C00CA622E /* eventListTableView.swift in Sources */,
 				4856554B2412817B005560A2 /* ourEventObject.swift in Sources */,
 				23C10BF92406AF3A00F9EC79 /* LoginViewController.swift in Sources */,
 				23B4B3AE23FD64CC0015AF84 /* SceneDelegate.swift in Sources */,
