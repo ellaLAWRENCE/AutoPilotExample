@@ -66,10 +66,10 @@ class addEvent: UIViewController, UITextFieldDelegate {
         if (EKEventStore.authorizationStatus(for: .event) != EKAuthorizationStatus.authorized) {
             eventStore.requestAccess(to: .event, completion: {
                 granted, error in
-                self.createEvent(eventStore: eventStore, title: "DJ's Test Event", startDate: startDate, endDate: endDate)
+                self.createEvent(eventStore: eventStore, title: "Test Event", startDate: startDate, endDate: endDate)
             })
         } else {
-            createEvent(eventStore: eventStore, title: "DJ's Test Event", startDate: startDate, endDate: endDate)
+            createEvent(eventStore: eventStore, title: "Test Event", startDate: startDate, endDate: endDate)
         }
         
     }
