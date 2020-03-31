@@ -20,4 +20,8 @@ class eventListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func getEvents() -> [ourEvent] {
+        return todayEvents
+    }
+    
 }
