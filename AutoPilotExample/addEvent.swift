@@ -8,9 +8,12 @@
 
 import UIKit
 import FirebaseAuth
+import EventKit
 
 class addEvent: UIViewController, UITextFieldDelegate {
 
+    var savedEventId : String = ""
+    
     @IBOutlet weak var assignmentNameText: UITextField!
     @IBOutlet weak var durationText: UITextField!
     @IBOutlet weak var startDateText: UITextField!
@@ -54,11 +57,6 @@ class addEvent: UIViewController, UITextFieldDelegate {
     }
     
     
-    @IBAction func addNow(_ sender: UIButton) {
-        var timeLeft = [Int]()
-        let dateFormatter = DateFormatter()
-        
-        
-    }
+
 
 }
