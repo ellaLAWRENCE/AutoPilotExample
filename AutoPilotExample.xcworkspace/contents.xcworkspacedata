@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/s014294/Desktop/CompsciSeminar/AutoPilotExample/AutoPilotExample/eventList.storyboard">
+   </FileRef>
+   <FileRef
       location = "group:AutoPilotExample.xcodeproj">
    </FileRef>
    <FileRef
