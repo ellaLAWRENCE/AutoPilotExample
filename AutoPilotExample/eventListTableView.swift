@@ -9,17 +9,16 @@
 import Foundation
 import UIKit
 
-class eventListTableViewData: NSObject, UITableViewDataSource{
+class eventListTableViewData:  NSObject, UITableViewDataSource{
     
-    var todayEvent : [ourEvent] = eventListViewController().getEvents()
+    var todayEvents: [ourEvent] = eventListViewController().getEvents()
     
-    override init(){
-        todayEvent.append(ourEvent.init(title: "test", duration: 2, start: Date(), end: Date()))
-    }
+//    override init(){
+//    }
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todayEvent.count
+        return 2
     }
     
    func tableView(_ tableView: UITableView,  cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -27,9 +26,9 @@ class eventListTableViewData: NSObject, UITableViewDataSource{
         cell.textLabel?.font = UIFont(name: "helvetica neue", size: 18)
         cell.textLabel?.textAlignment = .center
     
-    cell.textLabel?.text = todayEvent[indexPath.row].eventTitle
+    cell.textLabel?.text = eventListViewController().getTitle(row: 0) //todayEvent[indexPath.row].eventTitle
    
-        
+       // print(eventListViewController().getTitle(row: 0))
         return cell
     }
     

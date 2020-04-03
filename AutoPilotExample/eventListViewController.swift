@@ -34,4 +34,8 @@ class eventListViewController: UIViewController, UITableViewDelegate {
         
     }
     
+    func getTitle(row: Int) -> String {
+        return todayEvents[0].eventTitle
+    }
+    
 }

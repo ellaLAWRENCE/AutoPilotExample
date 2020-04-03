@@ -19,6 +19,13 @@ class ourEvent{
         self.start = start
         self.end = end
     }
+    
+    init(){
+        self.eventTitle = " "
+        self.duration = 0
+        self.start = Date()
+        self.end = Date()
+    }
 
 }
 
