@@ -9,16 +9,21 @@
 import UIKit
 import EventKit
 
-class eventListViewController: UIViewController {
+class eventListViewController: UIViewController, UITableViewDelegate {
 
     var todayEvents :  [ourEvent] = []
     
+    @IBOutlet var object: eventListTableViewData!
+    @IBOutlet var table: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        table.reloadData()
 
-        // Do any additional setup after loading the view.
+        
     }
+    
+    
     
     func getEvents() -> [ourEvent] {
         return todayEvents
