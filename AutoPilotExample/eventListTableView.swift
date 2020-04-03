@@ -14,35 +14,33 @@ class eventListTableViewData:  NSObject, UITableViewDataSource{
     var todayEvents: [ourEvent] = []
     
     override init(){
-    }
-    
-    func addEventTV(new: ourEvent) {
-        todayEvents.append(new)
-        print("added")
-        print(todayEvents[0].eventTitle)
-    }
-    
-    func getEvents() -> [ourEvent] {
-        return todayEvents
+//        for x in 0..<eventListViewController().getEvents().count{
+//            todayEvents.append(eventListViewController().getEvents()[x])
+//        }
+        
+//        todayEvents.append(ourEvent.init(title: "test", duration: 5, start: Date(), end: Date()))
+//        todayEvents.append(ourEvent.init(title: "plz", duration: 5, start: Date(), end: Date()))
+//        todayEvents.append(ourEvent.init(title: "work", duration: 5, start: Date(), end: Date()))
+//        todayEvents.append(ourEvent.init(title: "why", duration: 5, start: Date(), end: Date()))
         
     }
     
-    func display() -> String{
-        return todayEvents[0].eventTitle
-    }
+    
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todayEvents.count-1
+        print(todayEvents.count)
+        return todayEvents.count
     }
     
-   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        //cell.textLabel?.font = UIFont(name: "helvetica neue", size: 40)
-        //cell.textLabel?.textAlignment = .center
-        cell.textLabel?.text = "hello"
-//        cell.textLabel?.text = eventListViewController().getTitle(row: indexPath.row+1)
-        return cell
-    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = UITableViewCell()
+            cell.textLabel?.font = UIFont(name: "helvetica neue", size: 87)
+            cell.textLabel?.textAlignment = .center
+            cell.textLabel?.text = todayEvents[indexPath.row].eventTitle
+            return cell
+          
+      }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
