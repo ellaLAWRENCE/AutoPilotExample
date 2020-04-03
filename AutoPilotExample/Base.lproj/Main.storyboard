@@ -315,82 +315,84 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="du6-In-Quz">
-                                <rect key="frame" x="50" y="130" width="314" height="34"/>
+                                <rect key="frame" x="50" y="111" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAR-ho-EhH">
-                                <rect key="frame" x="50" y="89" width="137" height="21"/>
+                                <rect key="frame" x="50" y="70" width="137" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHf-EN-dV3">
-                                <rect key="frame" x="50" y="194" width="66" height="21"/>
+                                <rect key="frame" x="50" y="165" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9f-ZH-SMK">
-                                <rect key="frame" x="50" y="299" width="78" height="21"/>
+                                <rect key="frame" x="50" y="260" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8L-t8-UhA">
-                                <rect key="frame" x="50" y="404" width="72" height="21"/>
+                                <rect key="frame" x="50" y="501" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5HF-i9-laO">
-                                <rect key="frame" x="50" y="235" width="314" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fyb-ML-6rx">
-                                <rect key="frame" x="50" y="445" width="314" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bot-kO-Ldu">
-                                <rect key="frame" x="50" y="340" width="314" height="34"/>
+                                <rect key="frame" x="50" y="206" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpY-xA-L4r">
-                                <rect key="frame" x="169.5" y="608" width="75" height="30"/>
+                                <rect key="frame" x="169.5" y="758" width="75" height="30"/>
                                 <state key="normal" title="Add Event!"/>
                                 <connections>
                                     <action selector="AddEvent:" destination="c4q-8G-AG0" eventType="touchUpInside" id="nn1-qy-9Eo"/>
                                     <segue destination="iYn-cO-6LG" kind="show" id="usm-Ct-CoI"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MvI-Ks-1VX">
+                                <rect key="frame" x="50" y="301" width="314" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="2UY-Dr-X5z"/>
+                                </constraints>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="uVK-b1-lty">
+                                <rect key="frame" x="50" y="542" width="314" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="gTk-Ee-Vjt"/>
+                                </constraints>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="NAR-ho-EhH" firstAttribute="leading" secondItem="2Bv-2k-9ch" secondAttribute="leading" constant="50" id="0tn-6l-elD"/>
                             <constraint firstItem="2Bv-2k-9ch" firstAttribute="trailing" secondItem="5HF-i9-laO" secondAttribute="trailing" constant="50" id="3bv-rp-qrF"/>
-                            <constraint firstItem="Fyb-ML-6rx" firstAttribute="top" secondItem="X8L-t8-UhA" secondAttribute="bottom" constant="20" id="CCO-XJ-CyS"/>
-                            <constraint firstItem="2Bv-2k-9ch" firstAttribute="trailing" secondItem="bot-kO-Ldu" secondAttribute="trailing" constant="50" id="DB9-zV-mh0"/>
-                            <constraint firstItem="2Bv-2k-9ch" firstAttribute="bottom" secondItem="TpY-xA-L4r" secondAttribute="bottom" constant="170" id="ENe-qS-DSU"/>
-                            <constraint firstItem="bot-kO-Ldu" firstAttribute="top" secondItem="b9f-ZH-SMK" secondAttribute="bottom" constant="20" id="Eu0-V3-yTQ"/>
-                            <constraint firstItem="2Bv-2k-9ch" firstAttribute="trailing" secondItem="Fyb-ML-6rx" secondAttribute="trailing" constant="50" id="FVB-b7-t30"/>
-                            <constraint firstItem="bot-kO-Ldu" firstAttribute="leading" secondItem="2Bv-2k-9ch" secondAttribute="leading" constant="50" id="H3u-LI-biQ"/>
+                            <constraint firstItem="2Bv-2k-9ch" firstAttribute="bottom" secondItem="TpY-xA-L4r" secondAttribute="bottom" constant="20" id="ENe-qS-DSU"/>
                             <constraint firstItem="5HF-i9-laO" firstAttribute="leading" secondItem="2Bv-2k-9ch" secondAttribute="leading" constant="50" id="P43-BJ-dZN"/>
-                            <constraint firstItem="NAR-ho-EhH" firstAttribute="top" secondItem="2Bv-2k-9ch" secondAttribute="top" constant="89" id="RFy-bY-XQT"/>
-                            <constraint firstItem="b9f-ZH-SMK" firstAttribute="leading" secondItem="2Bv-2k-9ch" secondAttribute="leading" constant="50" id="S3o-Fj-pvv"/>
-                            <constraint firstItem="X8L-t8-UhA" firstAttribute="top" secondItem="bot-kO-Ldu" secondAttribute="bottom" constant="30" id="SRq-eV-owY"/>
-                            <constraint firstItem="X8L-t8-UhA" firstAttribute="leading" secondItem="2Bv-2k-9ch" secondAttribute="leading" constant="50" id="XM3-lH-mKx"/>
-                            <constraint firstItem="Fyb-ML-6rx" firstAttribute="leading" secondItem="2Bv-2k-9ch" secondAttribute="leading" constant="50" id="cv8-JF-dP0"/>
+                            <constraint firstItem="X8L-t8-UhA" firstAttribute="leading" secondItem="2Bv-2k-9ch" secondAttribute="leading" constant="50" id="QOw-US-1RH"/>
+                            <constraint firstItem="NAR-ho-EhH" firstAttribute="top" secondItem="2Bv-2k-9ch" secondAttribute="top" constant="70" id="RFy-bY-XQT"/>
+                            <constraint firstItem="MvI-Ks-1VX" firstAttribute="top" secondItem="b9f-ZH-SMK" secondAttribute="bottom" constant="20" id="TGT-A1-1rU"/>
+                            <constraint firstItem="b9f-ZH-SMK" firstAttribute="leading" secondItem="2Bv-2k-9ch" secondAttribute="leading" constant="50" id="bYy-1F-36q"/>
+                            <constraint firstItem="b9f-ZH-SMK" firstAttribute="top" secondItem="5HF-i9-laO" secondAttribute="bottom" constant="20" id="bfI-Zq-wYF"/>
                             <constraint firstItem="hHf-EN-dV3" firstAttribute="leading" secondItem="2Bv-2k-9ch" secondAttribute="leading" constant="50" id="do5-de-P6D"/>
+                            <constraint firstItem="MvI-Ks-1VX" firstAttribute="leading" secondItem="2Bv-2k-9ch" secondAttribute="leading" constant="50" id="eI4-BN-u0s"/>
                             <constraint firstItem="2Bv-2k-9ch" firstAttribute="trailing" secondItem="du6-In-Quz" secondAttribute="trailing" constant="50" id="fd8-bd-T6Y"/>
                             <constraint firstItem="du6-In-Quz" firstAttribute="leading" secondItem="2Bv-2k-9ch" secondAttribute="leading" constant="50" id="kyX-Nr-my3"/>
                             <constraint firstItem="TpY-xA-L4r" firstAttribute="centerX" secondItem="2Bv-2k-9ch" secondAttribute="centerX" id="mVk-Bx-eIG"/>
                             <constraint firstItem="du6-In-Quz" firstAttribute="top" secondItem="NAR-ho-EhH" secondAttribute="bottom" constant="20" id="mXU-2m-Aiz"/>
-                            <constraint firstItem="b9f-ZH-SMK" firstAttribute="top" secondItem="5HF-i9-laO" secondAttribute="bottom" constant="30" id="oZK-So-wLr"/>
-                            <constraint firstItem="hHf-EN-dV3" firstAttribute="top" secondItem="du6-In-Quz" secondAttribute="bottom" constant="30" id="ryw-cP-I8y"/>
+                            <constraint firstItem="uVK-b1-lty" firstAttribute="leading" secondItem="2Bv-2k-9ch" secondAttribute="leading" constant="50" id="pyW-dL-jOp"/>
+                            <constraint firstItem="hHf-EN-dV3" firstAttribute="top" secondItem="du6-In-Quz" secondAttribute="bottom" constant="20" id="ryw-cP-I8y"/>
+                            <constraint firstItem="uVK-b1-lty" firstAttribute="top" secondItem="X8L-t8-UhA" secondAttribute="bottom" constant="20" id="tny-Ae-mPr"/>
+                            <constraint firstItem="uVK-b1-lty" firstAttribute="centerX" secondItem="8fg-W1-UcV" secondAttribute="centerX" id="yYM-eP-p3R"/>
                             <constraint firstItem="5HF-i9-laO" firstAttribute="top" secondItem="hHf-EN-dV3" secondAttribute="bottom" constant="20" id="yyo-mJ-id0"/>
+                            <constraint firstItem="X8L-t8-UhA" firstAttribute="top" secondItem="MvI-Ks-1VX" secondAttribute="bottom" constant="20" id="zRe-lB-bRe"/>
+                            <constraint firstItem="MvI-Ks-1VX" firstAttribute="centerX" secondItem="8fg-W1-UcV" secondAttribute="centerX" id="zfV-YT-wwJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Bv-2k-9ch"/>
                     </view>
@@ -398,9 +400,9 @@
                     <connections>
                         <outlet property="addEventButton" destination="TpY-xA-L4r" id="zU1-Wb-TYD"/>
                         <outlet property="assignmentNameText" destination="du6-In-Quz" id="tWA-tC-1PN"/>
-                        <outlet property="dueDateText" destination="Fyb-ML-6rx" id="WUn-ST-d1z"/>
+                        <outlet property="dueDate" destination="uVK-b1-lty" id="fJE-Lp-Ypn"/>
                         <outlet property="durationText" destination="5HF-i9-laO" id="3UN-D6-EJQ"/>
-                        <outlet property="startDateText" destination="bot-kO-Ldu" id="lQA-dP-AF2"/>
+                        <outlet property="startDate" destination="MvI-Ks-1VX" id="FXZ-5j-sJF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVM-y4-I4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

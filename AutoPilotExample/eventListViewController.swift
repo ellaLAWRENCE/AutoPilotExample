@@ -23,7 +23,10 @@ class eventListViewController: UIViewController, UITableViewDelegate {
         
     }
     
-    
+    func addEvent(new: ourEvent) {
+        todayEvents.append(new)
+        print("added")
+    }
     
     func getEvents() -> [ourEvent] {
         return todayEvents
