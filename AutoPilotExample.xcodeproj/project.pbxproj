@@ -140,7 +140,6 @@
 				4856554824127F5B005560A2 /* eventListViewController.swift */,
 				48509E312416782C00CA622E /* eventListTableView.swift */,
 				4856554A2412817B005560A2 /* ourEventObject.swift */,
-				23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */,
 				483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */,
 				23B4B3B123FD64CC0015AF84 /* Main.storyboard */,
 				23B4B3B423FD64D50015AF84 /* Assets.xcassets */,
@@ -151,6 +150,7 @@
 				23C10BF82406AF3A00F9EC79 /* LoginViewController.swift */,
 				23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */,
 				23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */,
+				23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */,
 			);
 			path = AutoPilotExample;
 			sourceTree = "<group>";

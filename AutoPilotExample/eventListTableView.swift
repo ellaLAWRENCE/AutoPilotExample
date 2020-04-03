@@ -14,14 +14,11 @@ class eventListTableViewData:  NSObject, UITableViewDataSource{
     var todayEvents: [ourEvent] = []
     
     override init(){
-//        for x in 0..<eventListViewController().getEvents().count{
-//            todayEvents.append(eventListViewController().getEvents()[x])
-//        }
         
-//        todayEvents.append(ourEvent.init(title: "test", duration: 5, start: Date(), end: Date()))
-//        todayEvents.append(ourEvent.init(title: "plz", duration: 5, start: Date(), end: Date()))
-//        todayEvents.append(ourEvent.init(title: "work", duration: 5, start: Date(), end: Date()))
-//        todayEvents.append(ourEvent.init(title: "why", duration: 5, start: Date(), end: Date()))
+        todayEvents.append(ourEvent.init(title: "study", duration: 2, start: Date(), end: Date()))
+        todayEvents.append(ourEvent.init(title: "essay", duration: 4, start: Date(), end: Date()))
+        todayEvents.append(ourEvent.init(title: "math hw", duration: 1, start: Date(), end: Date()))
+       
         
     }
     
@@ -35,9 +32,11 @@ class eventListTableViewData:  NSObject, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = UITableViewCell()
-            cell.textLabel?.font = UIFont(name: "helvetica neue", size: 87)
+        cell.backgroundColor = #colorLiteral(red: 0.4392250952, green: 0.4392250952, blue: 0.4392250952, alpha: 1)
+            cell.textLabel?.font = UIFont(name: "helvetica neue", size: 50)
+            cell.textLabel?.textColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
             cell.textLabel?.textAlignment = .center
-            cell.textLabel?.text = todayEvents[indexPath.row].eventTitle
+            cell.textLabel?.text = todayEvents[indexPath.row].eventTitle + "   " + String(todayEvents[indexPath.row].duration) + "hr"
             return cell
           
       }
