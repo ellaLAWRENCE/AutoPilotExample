@@ -74,7 +74,6 @@ class addEvent: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func AddEvent(_ sender: UIButton) {
-        
         eventListViewController().addEvent(new: ourEvent.init(title: convertTitle(title: assignmentNameText), duration: convertTime(duration: durationText), start: startDate.date, end: dueDate.date))
         
     }

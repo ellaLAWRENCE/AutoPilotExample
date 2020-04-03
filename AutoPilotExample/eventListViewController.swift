@@ -30,6 +30,7 @@ class eventListViewController: UIViewController, UITableViewDelegate {
     
     func getEvents() -> [ourEvent] {
         return todayEvents
+        
     }
     
 }
