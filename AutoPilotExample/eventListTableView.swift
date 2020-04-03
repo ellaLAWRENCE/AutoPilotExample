@@ -28,18 +28,18 @@ class eventListTableViewData:  NSObject, UITableViewDataSource{
     }
     
     func display() -> String{
-            return todayEvents[0].eventTitle
+        return todayEvents[0].eventTitle
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todayEvents.count-1
     }
     
-   func tableView(_ tableView: UITableView,  cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.font = UIFont(name: "helvetica neue", size: 40)
-        cell.textLabel?.textAlignment = .center
-    cell.textLabel?.text = "hello"
+        //cell.textLabel?.font = UIFont(name: "helvetica neue", size: 40)
+        //cell.textLabel?.textAlignment = .center
+        cell.textLabel?.text = "hello"
 //        cell.textLabel?.text = eventListViewController().getTitle(row: indexPath.row+1)
         return cell
     }
@@ -47,4 +47,5 @@ class eventListTableViewData:  NSObject, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+
 }
