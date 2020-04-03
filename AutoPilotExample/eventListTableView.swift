@@ -11,14 +11,30 @@ import UIKit
 
 class eventListTableViewData:  NSObject, UITableViewDataSource{
     
-    var todayEvents: [ourEvent] = eventListViewController().getEvents()
+    var todayEvents: [ourEvent] = []
     
-//    override init(){
-//    }
+    override init(){
+    }
     
+    func addEvent(new: ourEvent) {
+        todayEvents.append(new)
+        print("added")
+        print(todayEvents[0].eventTitle)
+    }
+    
+    func getEvents() -> [ourEvent] {
+        return todayEvents
+        
+    }
+    
+    func display() -> String{
+            return todayEvents[0].eventTitle
+    
+    }
+
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     
    func tableView(_ tableView: UITableView,  cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -26,7 +42,7 @@ class eventListTableViewData:  NSObject, UITableViewDataSource{
         cell.textLabel?.font = UIFont(name: "helvetica neue", size: 18)
         cell.textLabel?.textAlignment = .center
     
-    cell.textLabel?.text = eventListViewController().getTitle(row: 0) //todayEvent[indexPath.row].eventTitle
+    cell.textLabel?.text = display()
    
        // print(eventListViewController().getTitle(row: 0))
         return cell
