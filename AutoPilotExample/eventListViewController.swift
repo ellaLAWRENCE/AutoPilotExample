@@ -19,15 +19,13 @@ class eventListViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         table.reloadData()
-
-        
     }
     
-    func addEvent(new: ourEvent) {
-        todayEvents.append(new)
-        print("added")
-        //print(todayEvents[0].eventTitle)
-    }
+//    func addEventVC(new: ourEvent) {
+//        todayEvents.append(new)
+//        print("added")
+//        //print(todayEvents[0].eventTitle)
+//    }
     
     func getEvents() -> [ourEvent] {
         return todayEvents
@@ -38,4 +36,8 @@ class eventListViewController: UIViewController, UITableViewDelegate {
         return todayEvents[row].eventTitle
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        print (indexPath)
+        table.reloadData()
+    }
 }
