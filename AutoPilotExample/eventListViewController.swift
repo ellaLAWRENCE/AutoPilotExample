@@ -26,6 +26,7 @@ class eventListViewController: UIViewController, UITableViewDelegate {
     func addEvent(new: ourEvent) {
         todayEvents.append(new)
         print("added")
+        print(todayEvents[0].eventTitle)
     }
     
     func getEvents() -> [ourEvent] {
