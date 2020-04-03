@@ -18,8 +18,10 @@
 		23C10BF92406AF3A00F9EC79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C10BF82406AF3A00F9EC79 /* LoginViewController.swift */; };
 		23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */; };
 		23C10C032406CB6600F9EC79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23C10C022406CB6600F9EC79 /* GoogleService-Info.plist */; };
-		483B57F724002E98001C3702 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57F624002E98001C3702 /* CalendarView.swift */; };
-		483B57F92406B31D001C3702 /* calendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57F82406B31D001C3702 /* calendarVars.swift */; };
+		23FA1D4B2436DFDC003C1CD9 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4A2436DFDC003C1CD9 /* MonthView.swift */; };
+		23FA1D4D2436E00E003C1CD9 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */; };
+		23FA1D4F2436E046003C1CD9 /* CalandarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */; };
+		23FA1D512436E1E3003C1CD9 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D502436E1E3003C1CD9 /* CalendarView.swift */; };
 		483B57FB2406B36A001C3702 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */; };
 		48509E322416782C00CA622E /* eventListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48509E312416782C00CA622E /* eventListTableView.swift */; };
 		4856554924127F5B005560A2 /* eventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856554824127F5B005560A2 /* eventListViewController.swift */; };
@@ -64,8 +66,10 @@
 		23C10BF82406AF3A00F9EC79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		23C10C022406CB6600F9EC79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		483B57F624002E98001C3702 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		483B57F82406B31D001C3702 /* calendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarVars.swift; sourceTree = "<group>"; };
+		23FA1D4A2436DFDC003C1CD9 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
+		23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalandarViewController.swift; sourceTree = "<group>"; };
+		23FA1D502436E1E3003C1CD9 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = ../CalendarView.swift; sourceTree = "<group>"; };
 		483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
 		48509E312416782C00CA622E /* eventListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventListTableView.swift; sourceTree = "<group>"; };
 		4856554724127EAC005560A2 /* eventList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = eventList.storyboard; path = /Users/s014294/Desktop/CompsciSeminar/AutoPilotExample/AutoPilotExample/eventList.storyboard; sourceTree = "<absolute>"; };
@@ -127,17 +131,18 @@
 		23B4B3AA23FD64CC0015AF84 /* AutoPilotExample */ = {
 			isa = PBXGroup;
 			children = (
-				23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */,
 				4856554724127EAC005560A2 /* eventList.storyboard */,
+				23FA1D4A2436DFDC003C1CD9 /* MonthView.swift */,
+				23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */,
+				23FA1D502436E1E3003C1CD9 /* CalendarView.swift */,
+				23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */,
+				485DBA4E240812C5003156D1 /* addEvent.swift */,
 				4856554824127F5B005560A2 /* eventListViewController.swift */,
 				48509E312416782C00CA622E /* eventListTableView.swift */,
 				4856554A2412817B005560A2 /* ourEventObject.swift */,
 				23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */,
-				483B57F624002E98001C3702 /* CalendarView.swift */,
 				483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */,
-				483B57F82406B31D001C3702 /* calendarVars.swift */,
 				23B4B3B123FD64CC0015AF84 /* Main.storyboard */,
-				485DBA4E240812C5003156D1 /* addEvent.swift */,
 				23B4B3B423FD64D50015AF84 /* Assets.xcassets */,
 				23B4B3B623FD64D50015AF84 /* LaunchScreen.storyboard */,
 				23B4B3B923FD64D50015AF84 /* Info.plist */,
@@ -145,6 +150,7 @@
 				23C10BF62406AF2500F9EC79 /* ViewController.swift */,
 				23C10BF82406AF3A00F9EC79 /* LoginViewController.swift */,
 				23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */,
+				23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */,
 			);
 			path = AutoPilotExample;
 			sourceTree = "<group>";
@@ -360,9 +366,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FA1D4F2436E046003C1CD9 /* CalandarViewController.swift in Sources */,
+				23FA1D4B2436DFDC003C1CD9 /* MonthView.swift in Sources */,
+				23FA1D4D2436E00E003C1CD9 /* WeekdayView.swift in Sources */,
 				23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */,
-				483B57F724002E98001C3702 /* CalendarView.swift in Sources */,
-				483B57F92406B31D001C3702 /* calendarVars.swift in Sources */,
+				23FA1D512436E1E3003C1CD9 /* CalendarView.swift in Sources */,
 				483B57FB2406B36A001C3702 /* DataCollectionViewCell.swift in Sources */,
 				23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */,
 				485DBA4F240812C5003156D1 /* addEvent.swift in Sources */,
