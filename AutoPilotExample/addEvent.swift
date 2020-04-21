@@ -8,10 +8,6 @@
 
 import UIKit
 import FirebaseAuth
-import FirebaseStorage
-import Firebase
-import EventKit
-import FirebaseFirestore
 
 class addEvent: UIViewController, UITextFieldDelegate {
     
@@ -83,19 +79,7 @@ class addEvent: UIViewController, UITextFieldDelegate {
         todaysEvents().addEvent(new: ourEventObject.init(title: convertTitle(title: assignmentNameText), duration: convertTime(duration: durationText), start: startDate.date, end: dueDate.date))
         
         
-        let db = Firestore.firestore()
-        var ref: DocumentReference? = nil
-        ref = db.collection("users").addDocument(data: [
-            "first": "Ada",
-            "last": "Lovelace",
-            "born": 1815
-        ]) { err in
-            if let err = err {
-                print("Error adding document: \(err)")
-            } else {
-                print("Document added with ID: \(ref!.documentID)")
-            }
-        }
+
         
         
         
