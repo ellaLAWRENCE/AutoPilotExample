@@ -11,7 +11,7 @@ import EventKit
 
 class eventListViewController: UIViewController, UITableViewDelegate {
 
-    var todayEvents :  [ourEvent] = []
+    var todayEvents :  [ourEventObject] = []
     
     @IBOutlet var object: eventListTableViewData!
     @IBOutlet var table: UITableView!
@@ -21,23 +21,9 @@ class eventListViewController: UIViewController, UITableViewDelegate {
         table.reloadData()
     }
     
-    func addEventVC(new: ourEvent) {
-        todayEvents.append(new)
-        print("added")
-        //print(todayEvents[0].eventTitle)
-    }
-    
-    func getEvents() -> [ourEvent] {
-        return todayEvents
-        
-    }
-    
-    func getTitle(row: Int) -> String {
-        return todayEvents[row].eventTitle
-    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         print(indexPath)
-        table.reloadData()
+       // table.reloadData()
     }
 }

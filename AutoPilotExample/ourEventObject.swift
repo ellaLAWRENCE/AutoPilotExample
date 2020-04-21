@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class ourEvent{
+class ourEventObject{
     var eventTitle = String()
     var duration = Int()
     var start = Date()

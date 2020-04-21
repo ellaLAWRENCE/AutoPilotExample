@@ -18,6 +18,7 @@
 		23C10BF92406AF3A00F9EC79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C10BF82406AF3A00F9EC79 /* LoginViewController.swift */; };
 		23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */; };
 		23C10C032406CB6600F9EC79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23C10C022406CB6600F9EC79 /* GoogleService-Info.plist */; };
+		23F19A0D244E73FC00D7DFC4 /* todaysEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F19A0C244E73FC00D7DFC4 /* todaysEvents.swift */; };
 		23FA1D4B2436DFDC003C1CD9 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4A2436DFDC003C1CD9 /* MonthView.swift */; };
 		23FA1D4D2436E00E003C1CD9 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */; };
 		23FA1D4F2436E046003C1CD9 /* CalandarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */; };
@@ -66,6 +67,7 @@
 		23C10BF82406AF3A00F9EC79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		23C10C022406CB6600F9EC79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		23F19A0C244E73FC00D7DFC4 /* todaysEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todaysEvents.swift; sourceTree = "<group>"; };
 		23FA1D4A2436DFDC003C1CD9 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalandarViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				4856554824127F5B005560A2 /* eventListViewController.swift */,
 				48509E312416782C00CA622E /* eventListTableView.swift */,
 				4856554A2412817B005560A2 /* ourEventObject.swift */,
+				23F19A0C244E73FC00D7DFC4 /* todaysEvents.swift */,
 				483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */,
 				23B4B3B123FD64CC0015AF84 /* Main.storyboard */,
 				23B4B3B423FD64D50015AF84 /* Assets.xcassets */,
@@ -366,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F19A0D244E73FC00D7DFC4 /* todaysEvents.swift in Sources */,
 				23FA1D4F2436E046003C1CD9 /* CalandarViewController.swift in Sources */,
 				23FA1D4B2436DFDC003C1CD9 /* MonthView.swift in Sources */,
 				23FA1D4D2436E00E003C1CD9 /* WeekdayView.swift in Sources */,
