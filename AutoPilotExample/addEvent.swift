@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  AutoPilotExample
+//  AutoPilotExamplec
 //
 //  Created by Ella Lawrence (student LM) on 2/26/20.
 //  Copyright © 2020 Ella Lawrence (student LM). All rights reserved.

@@ -10,17 +10,12 @@ import Foundation
 import UIKit
 
 class eventListTableViewData: NSObject, UITableViewDataSource{
-    var e = todaysEvents().events
+    
     var todayEvent = todaysEvents().getEvent()
     
     override init(){
     }
     
-    func reset(){
-        e = todaysEvents().events
-        print("idk")
-        print(e)
-    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todayEvent.count
@@ -32,7 +27,7 @@ class eventListTableViewData: NSObject, UITableViewDataSource{
     cell.textLabel?.textAlignment = .center
 //            cell.textLabel?.text = todayEvent[indexPath.row].eventTitle + "   " + String(todayEvent[indexPath.row].duration) + "hr"
          cell.textLabel?.text = todayEvent[indexPath.row].eventTitle
-        print("goes here")
+        print("completed this")
             return cell
           
       }
@@ -40,5 +35,13 @@ class eventListTableViewData: NSObject, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
+    
+    
+    func reset(){
+         todayEvent = todaysEvents().events
+         print("reset")
+        
+     }
 
 }

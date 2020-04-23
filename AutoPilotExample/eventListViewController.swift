@@ -11,14 +11,14 @@ import EventKit
 
 class eventListViewController: UIViewController, UITableViewDelegate {
 
-    var todayEvents :  [ourEventObject] = []
+    //var todayEvents :  [ourEventObject] = []
     
     @IBOutlet var object: eventListTableViewData!
     @IBOutlet var table: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        table.reloadData()
+       // table.reloadData()
     }
     
     

@@ -15,12 +15,15 @@ class todaysEvents{
     func addEvent(new: ourEventObject){
         events.append(new)
         print("added")
+        print(events[0].eventTitle)
+         print("array size in addEvent = " + String(events.count))
         //print(getEvent())
-        eventListTableViewData().reset()
+      //  eventListTableViewData().reset()
     }
     
     func getEvent() -> [ourEventObject]{
         print ("gotten")
+        print("array size in gotEvent() = " + String(events.count))
         return events
     }
     
