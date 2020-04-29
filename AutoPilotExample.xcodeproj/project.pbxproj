@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235435D52459F7EA00347BFD /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235435D42459F7EA00347BFD /* CalendarVars.swift */; };
+		235435D72459FC0C00347BFD /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235435D62459FC0C00347BFD /* DateCollectionViewCell.swift */; };
 		23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */; };
 		23B4B3AE23FD64CC0015AF84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */; };
 		23B4B3B323FD64CC0015AF84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B4B3B123FD64CC0015AF84 /* Main.storyboard */; };
@@ -23,7 +25,6 @@
 		23FA1D4D2436E00E003C1CD9 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */; };
 		23FA1D4F2436E046003C1CD9 /* CalandarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */; };
 		23FA1D512436E1E3003C1CD9 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D502436E1E3003C1CD9 /* CalendarView.swift */; };
-		483B57FB2406B36A001C3702 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */; };
 		48509E322416782C00CA622E /* eventListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48509E312416782C00CA622E /* eventListTableView.swift */; };
 		4856554924127F5B005560A2 /* eventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856554824127F5B005560A2 /* eventListViewController.swift */; };
 		4856554B2412817B005560A2 /* ourEventObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856554A2412817B005560A2 /* ourEventObject.swift */; };
@@ -50,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		1FF5A26904656A8B6B82F583 /* Pods_AutoPilotExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPilotExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		235435D42459F7EA00347BFD /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
+		235435D62459FC0C00347BFD /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		23B4B3A823FD64CC0015AF84 /* AutoPilotExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPilotExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +75,6 @@
 		23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalandarViewController.swift; sourceTree = "<group>"; };
 		23FA1D502436E1E3003C1CD9 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = ../CalendarView.swift; sourceTree = "<group>"; };
-		483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
 		48509E312416782C00CA622E /* eventListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventListTableView.swift; sourceTree = "<group>"; };
 		4856554724127EAC005560A2 /* eventList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = eventList.storyboard; path = /Users/s014294/Desktop/CompsciSeminar/AutoPilotExample/AutoPilotExample/eventList.storyboard; sourceTree = "<absolute>"; };
 		4856554824127F5B005560A2 /* eventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventListViewController.swift; sourceTree = "<group>"; };
@@ -143,7 +145,6 @@
 				48509E312416782C00CA622E /* eventListTableView.swift */,
 				4856554A2412817B005560A2 /* ourEventObject.swift */,
 				23F19A0C244E73FC00D7DFC4 /* todaysEvents.swift */,
-				483B57FA2406B36A001C3702 /* DataCollectionViewCell.swift */,
 				23B4B3B123FD64CC0015AF84 /* Main.storyboard */,
 				23B4B3B423FD64D50015AF84 /* Assets.xcassets */,
 				23B4B3B623FD64D50015AF84 /* LaunchScreen.storyboard */,
@@ -154,6 +155,8 @@
 				23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */,
 				23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */,
 				23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */,
+				235435D42459F7EA00347BFD /* CalendarVars.swift */,
+				235435D62459FC0C00347BFD /* DateCollectionViewCell.swift */,
 			);
 			path = AutoPilotExample;
 			sourceTree = "<group>";
@@ -372,15 +375,16 @@
 				23F19A0D244E73FC00D7DFC4 /* todaysEvents.swift in Sources */,
 				23FA1D4F2436E046003C1CD9 /* CalandarViewController.swift in Sources */,
 				23FA1D4B2436DFDC003C1CD9 /* MonthView.swift in Sources */,
+				235435D52459F7EA00347BFD /* CalendarVars.swift in Sources */,
 				23FA1D4D2436E00E003C1CD9 /* WeekdayView.swift in Sources */,
 				23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */,
 				23FA1D512436E1E3003C1CD9 /* CalendarView.swift in Sources */,
-				483B57FB2406B36A001C3702 /* DataCollectionViewCell.swift in Sources */,
 				23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */,
 				485DBA4F240812C5003156D1 /* addEvent.swift in Sources */,
 				23C10BF72406AF2500F9EC79 /* ViewController.swift in Sources */,
 				4856554924127F5B005560A2 /* eventListViewController.swift in Sources */,
 				48509E322416782C00CA622E /* eventListTableView.swift in Sources */,
+				235435D72459FC0C00347BFD /* DateCollectionViewCell.swift in Sources */,
 				4856554B2412817B005560A2 /* ourEventObject.swift in Sources */,
 				23C10BF92406AF3A00F9EC79 /* LoginViewController.swift in Sources */,
 				23B4B3AE23FD64CC0015AF84 /* SceneDelegate.swift in Sources */,

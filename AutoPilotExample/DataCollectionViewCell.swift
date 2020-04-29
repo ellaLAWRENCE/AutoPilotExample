@@ -11,6 +11,9 @@ import UIKit
 class DataCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var eventLabel: UILabel!
-    @IBOutlet weak var DataLabel: UILabel!
+    @IBOutlet weak var DataLabel: UIButton!
     var time = [Int]() //may need to change this later
+    
+    
+    
 }

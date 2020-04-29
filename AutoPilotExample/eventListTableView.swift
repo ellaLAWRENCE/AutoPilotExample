@@ -11,10 +11,11 @@ import UIKit
 
 class eventListTableViewData: NSObject, UITableViewDataSource{
     
-    var todayEvent = todaysEvents().getEvent()
+    var todayEvent : [ourEventObject] = []
     
     override init(){
     }
+    
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

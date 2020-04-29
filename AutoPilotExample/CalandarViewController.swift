@@ -14,46 +14,48 @@ enum MyTheme {
 
 
 class CalandarViewController: UIViewController {
+    
 
-    var theme = MyTheme.dark
+    var theme = MyTheme.light
     @IBOutlet var addButton: UIButton!
     
-    
+  
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.title = "My Calender"
-        self.navigationController?.navigationBar.isTranslucent=false
-        self.view.backgroundColor=Style.bgColor
+                super.viewDidLoad()
+                self.title = "My Calender"
+                self.navigationController?.navigationBar.isTranslucent=false
+                self.view.backgroundColor=Style.bgColor
         
-        view.addSubview(calenderView)
-        calenderView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive=true
-        calenderView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -12).isActive=true
-        calenderView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 12).isActive=true
-        calenderView.heightAnchor.constraint(equalToConstant: 365).isActive=true
+                view.addSubview(calenderView)
+                calenderView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive=true
+                calenderView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -12).isActive=true
+                calenderView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 12).isActive=true
+                calenderView.heightAnchor.constraint(equalToConstant: 365).isActive=true
         
-        let rightBarBtn = UIBarButtonItem(title: "Light", style: .plain, target: self, action: #selector(rightBarBtnAction))
-        self.navigationItem.rightBarButtonItem = rightBarBtn
+                let rightBarBtn = UIBarButtonItem(title: "Light", style: .plain, target: self, action: #selector(rightBarBtnAction))
+                self.navigationItem.rightBarButtonItem = rightBarBtn
+        
+        
+        
+        
+        
+        
         
         
     }
-   
     
+    
+    
+    
+
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         calenderView.myCollectionView.collectionViewLayout.invalidateLayout()
     }
-    
-    @IBAction func test(_ sender: UIButton){
-        let main = UIStoryboard(name: "Main", bundle: nil)
-        let change = main.instantiateViewController(withIdentifier: "nextController")
-        self.present(change, animated: true, completion: nil)
-    }
-    
 
-    
-    
-    
+
+
     @objc func rightBarBtnAction(sender: UIBarButtonItem) {
         if theme == .dark {
             sender.title = "Dark"
@@ -67,7 +69,7 @@ class CalandarViewController: UIViewController {
         self.view.backgroundColor=Style.bgColor
         calenderView.changeTheme()
     }
-    
+
    let calenderView: CalenderView = {
        let v=CalenderView(theme: MyTheme.dark)
        v.translatesAutoresizingMaskIntoConstraints=false

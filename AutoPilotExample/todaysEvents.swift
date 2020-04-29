@@ -10,7 +10,12 @@ import Foundation
 
 class todaysEvents{
     
-    var events :[ourEventObject] = []
+    var events :[ourEventObject]
+    
+    
+    init(){
+     events = []
+    }
     
     func addEvent(new: ourEventObject){
         events.append(new)

@@ -79,7 +79,7 @@ class addEvent: UIViewController, UITextFieldDelegate {
         todaysEvents().addEvent(new: ourEventObject.init(title: convertTitle(title: assignmentNameText), duration: convertTime(duration: durationText), start: startDate.date, end: dueDate.date))
         
         
-
+        eventListTableViewData.init()
         
         
         
