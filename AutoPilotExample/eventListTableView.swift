@@ -11,7 +11,7 @@ import UIKit
 
 class eventListTableViewData: NSObject, UITableViewDataSource{
     
-    var todayEvent : [ourEventObject] = []
+    var todayEvent : [ourEventObject] = todaysEvents().getEvent()
     
     override init(){
     }
