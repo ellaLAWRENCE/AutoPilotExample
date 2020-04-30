@@ -9,11 +9,13 @@
 import Foundation
 
 // class names should be capitalized
-class todaysEvents{
+class DaysEvents{
     
-    var events:[ourEventObject]
+    var date : Date
+    var events : [ourEventObject]
     
     init(){
+        date = // figure out what date it should be on.
         events = []
     }
     

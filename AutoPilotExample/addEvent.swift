@@ -7,15 +7,12 @@
 //
 
 import UIKit
-import FirebaseAuth
 
-class addEvent: UIViewController, UITextFieldDelegate {
+class AddEvent: UIViewController, UITextFieldDelegate {
     
-    
-
     var savedEventId : String = ""
     var event = eventListViewController()
-    
+    var todaysEvents = TodaysEvents()
     
     @IBOutlet weak var assignmentNameText: UITextField!
     @IBOutlet weak var durationText: UITextField!
@@ -75,16 +72,9 @@ class addEvent: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func AddEvent(_ sender: UIButton) {
-        // again, this initializes a new todaysEvents and adds an event, but every time you call this function it would seem to me that it would create a new todaysEvents object.
-        todaysEvents().addEvent(new: ourEventObject.init(title: convertTitle(title: assignmentNameText), duration: convertTime(duration: durationText), start: startDate.date, end: dueDate.date))
-        
+        todaysEvents.addEvent(new: ourEventObject.init(title: convertTitle(title: assignmentNameText), duration: convertTime(duration: durationText), start: startDate.date, end: dueDate.date))
         
         eventListTableViewData.init()
-        
-        
-        
-        
-        
     }
     
         
