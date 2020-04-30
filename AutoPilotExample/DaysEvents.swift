@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+// https://learnappmaking.com/singletons-swift/
 // class names should be capitalized
 class DaysEvents{
     
