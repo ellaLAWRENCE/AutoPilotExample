@@ -75,7 +75,7 @@ class addEvent: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func AddEvent(_ sender: UIButton) {
-            
+        // again, this initializes a new todaysEvents and adds an event, but every time you call this function it would seem to me that it would create a new todaysEvents object.
         todaysEvents().addEvent(new: ourEventObject.init(title: convertTitle(title: assignmentNameText), duration: convertTime(duration: durationText), start: startDate.date, end: dueDate.date))
         
         

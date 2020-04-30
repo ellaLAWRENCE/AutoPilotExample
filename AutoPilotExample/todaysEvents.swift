@@ -8,13 +8,13 @@
 
 import Foundation
 
+// class names should be capitalized
 class todaysEvents{
     
-    var events :[ourEventObject]
-    
+    var events:[ourEventObject]
     
     init(){
-     events = []
+        events = []
     }
     
     func addEvent(new: ourEventObject){
