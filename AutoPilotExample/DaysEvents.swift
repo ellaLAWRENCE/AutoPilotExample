@@ -12,14 +12,14 @@ import Foundation
 class DaysEvents{
     
     var date : Date
-    var events : [ourEventObject]
+    var events : [OurEventObject]
     
     init(){
         date = // figure out what date it should be on.
-        events = []
+      //  events = []
     }
     
-    func addEvent(new: ourEventObject){
+    func addEvent(new: OurEventObject){
         events.append(new)
         print("added")
         print(events[0].eventTitle)
@@ -28,7 +28,7 @@ class DaysEvents{
       //  eventListTableViewData().reset()
     }
     
-    func getEvent() -> [ourEventObject]{
+    func getEvent() -> [OurEventObject]{
         print ("gotten")
         print("array size in gotEvent() = " + String(events.count))
         return events
