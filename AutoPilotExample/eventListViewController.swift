@@ -9,7 +9,7 @@
 import UIKit
 import EventKit
 
-class EventListViewController: UIViewController, UITableViewDelegate {
+class eventListViewController: UIViewController, UITableViewDelegate {
 
     //var todayEvents :  [ourEventObject] = []
     

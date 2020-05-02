@@ -9,17 +9,26 @@
 import Foundation
 
 class Events{
-    
+
     static let shared = Events()
-    var events = [DaysEvents]()
-    
+    var events = [ourEventObject]()
+
     private init(){}
-    
-    func addDay(daysEvents : DaysEvents){
+
+    func addDay(daysEvents : ourEventObject){
         events.append(daysEvents)
     }
+
+    func getDaysEvent(date : DateComponents) -> [ourEventObject]{
+        var a : [ourEventObject] = []
     
-    func getDaysEvent(date : Date) -> DaysEvents{
-        // figure out how to make sure that you're getting the correct day!
+        for x in 0..<events.count{
+            if events[x].dayInBetween.day == date.day{
+                a.append(events[x])
+            }
+        }
+    
+        return a
     }
+
 }

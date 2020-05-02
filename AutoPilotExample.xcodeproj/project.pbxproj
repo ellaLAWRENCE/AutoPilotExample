@@ -26,10 +26,10 @@
 		23FA1D4D2436E00E003C1CD9 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */; };
 		23FA1D4F2436E046003C1CD9 /* CalandarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */; };
 		23FA1D512436E1E3003C1CD9 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D502436E1E3003C1CD9 /* CalendarView.swift */; };
-		48509E322416782C00CA622E /* EventListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48509E312416782C00CA622E /* EventListTableView.swift */; };
-		4856554924127F5B005560A2 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856554824127F5B005560A2 /* EventListViewController.swift */; };
-		4856554B2412817B005560A2 /* OurEventObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856554A2412817B005560A2 /* OurEventObject.swift */; };
-		485DBA4F240812C5003156D1 /* AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DBA4E240812C5003156D1 /* AddEvent.swift */; };
+		48509E322416782C00CA622E /* eventListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48509E312416782C00CA622E /* eventListTableView.swift */; };
+		4856554924127F5B005560A2 /* eventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856554824127F5B005560A2 /* eventListViewController.swift */; };
+		4856554B2412817B005560A2 /* ourEventObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856554A2412817B005560A2 /* ourEventObject.swift */; };
+		485DBA4F240812C5003156D1 /* addEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DBA4E240812C5003156D1 /* addEvent.swift */; };
 		6727331FABAD3B843A7D68BD /* Pods_AutoPilotExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF5A26904656A8B6B82F583 /* Pods_AutoPilotExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,11 +77,11 @@
 		23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalandarViewController.swift; sourceTree = "<group>"; };
 		23FA1D502436E1E3003C1CD9 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = ../CalendarView.swift; sourceTree = "<group>"; };
-		48509E312416782C00CA622E /* EventListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListTableView.swift; sourceTree = "<group>"; };
+		48509E312416782C00CA622E /* eventListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventListTableView.swift; sourceTree = "<group>"; };
 		4856554724127EAC005560A2 /* eventList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = eventList.storyboard; path = /Users/s014294/Desktop/CompsciSeminar/AutoPilotExample/AutoPilotExample/eventList.storyboard; sourceTree = "<absolute>"; };
-		4856554824127F5B005560A2 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
-		4856554A2412817B005560A2 /* OurEventObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurEventObject.swift; sourceTree = "<group>"; };
-		485DBA4E240812C5003156D1 /* AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEvent.swift; sourceTree = "<group>"; };
+		4856554824127F5B005560A2 /* eventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventListViewController.swift; sourceTree = "<group>"; };
+		4856554A2412817B005560A2 /* ourEventObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ourEventObject.swift; sourceTree = "<group>"; };
+		485DBA4E240812C5003156D1 /* addEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEvent.swift; sourceTree = "<group>"; };
 		9B55504453429E762725F7E3 /* Pods-AutoPilotExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPilotExample.release.xcconfig"; path = "Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample.release.xcconfig"; sourceTree = "<group>"; };
 		F8E081E1F3FD40CAF16A06EE /* Pods-AutoPilotExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPilotExample.debug.xcconfig"; path = "Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,11 +142,12 @@
 				23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */,
 				23FA1D502436E1E3003C1CD9 /* CalendarView.swift */,
 				23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */,
-				485DBA4E240812C5003156D1 /* AddEvent.swift */,
-				4856554824127F5B005560A2 /* EventListViewController.swift */,
-				48509E312416782C00CA622E /* EventListTableView.swift */,
-				4856554A2412817B005560A2 /* OurEventObject.swift */,
+				485DBA4E240812C5003156D1 /* addEvent.swift */,
+				4856554824127F5B005560A2 /* eventListViewController.swift */,
+				48509E312416782C00CA622E /* eventListTableView.swift */,
+				4856554A2412817B005560A2 /* ourEventObject.swift */,
 				23F19A0C244E73FC00D7DFC4 /* DaysEvents.swift */,
+				09209A39245B015E005E6BFD /* Events.swift */,
 				23B4B3B123FD64CC0015AF84 /* Main.storyboard */,
 				23B4B3B423FD64D50015AF84 /* Assets.xcassets */,
 				23B4B3B623FD64D50015AF84 /* LaunchScreen.storyboard */,
@@ -159,7 +160,6 @@
 				23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */,
 				235435D42459F7EA00347BFD /* CalendarVars.swift */,
 				235435D62459FC0C00347BFD /* DateCollectionViewCell.swift */,
-				09209A39245B015E005E6BFD /* Events.swift */,
 			);
 			path = AutoPilotExample;
 			sourceTree = "<group>";
@@ -383,12 +383,12 @@
 				23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */,
 				23FA1D512436E1E3003C1CD9 /* CalendarView.swift in Sources */,
 				23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */,
-				485DBA4F240812C5003156D1 /* AddEvent.swift in Sources */,
+				485DBA4F240812C5003156D1 /* addEvent.swift in Sources */,
 				23C10BF72406AF2500F9EC79 /* ViewController.swift in Sources */,
-				4856554924127F5B005560A2 /* EventListViewController.swift in Sources */,
-				48509E322416782C00CA622E /* EventListTableView.swift in Sources */,
+				4856554924127F5B005560A2 /* eventListViewController.swift in Sources */,
+				48509E322416782C00CA622E /* eventListTableView.swift in Sources */,
 				235435D72459FC0C00347BFD /* DateCollectionViewCell.swift in Sources */,
-				4856554B2412817B005560A2 /* OurEventObject.swift in Sources */,
+				4856554B2412817B005560A2 /* ourEventObject.swift in Sources */,
 				09209A3A245B015E005E6BFD /* Events.swift in Sources */,
 				23C10BF92406AF3A00F9EC79 /* LoginViewController.swift in Sources */,
 				23B4B3AE23FD64CC0015AF84 /* SceneDelegate.swift in Sources */,

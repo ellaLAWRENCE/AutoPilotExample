@@ -8,11 +8,11 @@
 
 import UIKit
 
-class AddEvent: UIViewController, UITextFieldDelegate {
+class addEvent: UIViewController, UITextFieldDelegate {
     
     var savedEventId : String = ""
     var event = eventListViewController()
-    var todaysEvents = TodaysEvents()
+    var todaysEvents = Events.shared
     
     @IBOutlet weak var assignmentNameText: UITextField!
     @IBOutlet weak var durationText: UITextField!
@@ -72,10 +72,23 @@ class AddEvent: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func AddEvent(_ sender: UIButton) {
-        todaysEvents.addEvent(new: ourEventObject.init(title: convertTitle(title: assignmentNameText), duration: convertTime(duration: durationText), start: startDate.date, end: dueDate.date))
+       var splitTime : Int
+        var totalDays : Int = calendar.component(.day, from: dueDate.date)-calendar.component(.day, from: startDate.date)
+        splitTime = convertTime(duration: durationText)/totalDays
         
-        eventListTableViewData.init()
-    }
+        for x in 0..<totalDays{
+            var today = Date()
+            var dates = DateComponents()
+            dates.year = calendar.component(.year, from: today)
+            dates.month = calendar.component(.month, from: today)
+            dates.day = calendar.component(.day, from: today)
+            dates.timeZone = TimeZone(abbreviation: "EST") // East Standard Time
+            dates.hour = calendar.component(.hour, from: today)
+            dates.minute = calendar.component(.minute, from: today)
+            
+            
+            todaysEvents.addDay(daysEvents: ourEventObject.init(title: convertTitle(title: assignmentNameText), duration: splitTime, allDays: dates, end: dueDate.date))
+        }
     
         
 
@@ -83,6 +96,6 @@ class AddEvent: UIViewController, UITextFieldDelegate {
             
 }
 
-
+}
     
 
