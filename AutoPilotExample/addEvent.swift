@@ -73,7 +73,7 @@ class addEvent: UIViewController, UITextFieldDelegate {
     
     @IBAction func AddEvent(_ sender: UIButton) {
        var splitTime : Int
-        var totalDays : Int = calendar.component(.day, from: dueDate.date)-calendar.component(.day, from: startDate.date)
+        var totalDays : Int = calendar.component(.day, from: dueDate.date)-calendar.component(.day, from: startDate.date)+1
         splitTime = convertTime(duration: durationText)/totalDays
         
         var today = Date()
