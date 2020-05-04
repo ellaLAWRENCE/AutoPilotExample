@@ -78,16 +78,17 @@ class addEvent: UIViewController, UITextFieldDelegate {
         
         for x in 0..<totalDays{
             var today = Date()
+            var calendar = Calendar.current
             var dates = DateComponents()
             dates.year = calendar.component(.year, from: today)
             dates.month = calendar.component(.month, from: today)
-            dates.day = calendar.component(.day, from: today)
+            dates.day = calendar.component(.day, from: today)+x
             dates.timeZone = TimeZone(abbreviation: "EST") // East Standard Time
             dates.hour = calendar.component(.hour, from: today)
             dates.minute = calendar.component(.minute, from: today)
             
             
-            todaysEvents.addDay(daysEvents: ourEventObject.init(title: convertTitle(title: assignmentNameText), duration: splitTime, allDays: dates, end: dueDate.date))
+            todaysEvents.addDay(daysEvents: ourEventObject.init(title: convertTitle(title: assignmentNameText), duration: splitTime, allDays: calendar.date(from: dates)!, end: dueDate.date))
         }
     
         

@@ -19,11 +19,11 @@ class Events{
         events.append(daysEvents)
     }
 
-    func getDaysEvent(date : DateComponents) -> [ourEventObject]{
+    func getDaysEvent(date : Date) -> [ourEventObject]{
         var a : [ourEventObject] = []
     
         for x in 0..<events.count{
-            if events[x].dayInBetween.day == date.day{
+            if events[x].dayInBetween == date{
                 a.append(events[x])
             }
         }
