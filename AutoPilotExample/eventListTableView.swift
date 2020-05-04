@@ -26,10 +26,10 @@ class eventListTableViewData: NSObject, UITableViewDataSource{
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = UITableViewCell()
-            cell.textLabel?.font = UIFont(name: "helvetica neue", size: 87)
+            cell.textLabel?.font = UIFont(name: "helvetica neue", size: 40)
             cell.textLabel?.textAlignment = .center
             //cell.textLabel?.text = todayEvent.getDaysEvent(date: Date())[indexPath.row].eventTitle
-            cell.textLabel?.text = todayEvent.getEvent()[indexPath.row].eventTitle
+            cell.textLabel?.text = "\(todayEvent.getEvent()[indexPath.row].eventTitle) \(todayEvent.getEvent()[indexPath.row].dayInBetween) "
             print("completed this")
             return cell
             
