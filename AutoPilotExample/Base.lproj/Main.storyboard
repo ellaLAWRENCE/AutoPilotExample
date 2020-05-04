@@ -324,7 +324,6 @@
                     <navigationItem key="navigationItem" id="9kr-qk-olT"/>
                     <connections>
                         <outlet property="addButton" destination="O8h-x4-T22" id="6dT-xX-5ss"/>
-                        <segue destination="lCa-sf-BGa" kind="show" identifier="change" id="LhN-6r-ELM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wat-kr-CNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -442,6 +441,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WGZ-eU-iPS"/>
-        <segue reference="LhN-6r-ELM"/>
     </inferredMetricsTieBreakers>
 </document>

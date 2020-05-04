@@ -20,14 +20,16 @@ class eventListTableViewData: NSObject, UITableViewDataSource{
         
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return todayEvent.getDaysEvent(date: Date()).count
+            return todayEvent.getEvent().count
+            //return todayEvent.getDaysEvent(date: Date()).count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = UITableViewCell()
             cell.textLabel?.font = UIFont(name: "helvetica neue", size: 87)
             cell.textLabel?.textAlignment = .center
-            cell.textLabel?.text = todayEvent.getDaysEvent(date: Date())[indexPath.row].eventTitle
+            //cell.textLabel?.text = todayEvent.getDaysEvent(date: Date())[indexPath.row].eventTitle
+            cell.textLabel?.text = todayEvent.getEvent()[indexPath.row].eventTitle
             print("completed this")
             return cell
             

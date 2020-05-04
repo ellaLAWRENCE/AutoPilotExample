@@ -49,7 +49,7 @@ class CalandarViewController: UIViewController {
     
     func change(){
         print("here")
-        performSegue(withIdentifier: "goTable", sender: nil)
+     //   performSegue(withIdentifier: "change", sender: self)
         
     }
     

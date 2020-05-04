@@ -30,5 +30,9 @@ class Events{
     
         return a
     }
+    
+    func getEvent() -> [OurEventObject]{
+        return events
+    }
 
 }
