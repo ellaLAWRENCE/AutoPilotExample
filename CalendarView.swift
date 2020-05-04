@@ -135,7 +135,6 @@ class CalenderView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
         cell?.backgroundColor=Colors.blue
         let lbl = cell?.subviews[1] as! UILabel
         lbl.textColor=UIColor.white
-    
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {

@@ -88,7 +88,7 @@ class addEvent: UIViewController, UITextFieldDelegate {
             dates.minute = calendar.component(.minute, from: today)
             
             
-            todaysEvents.addDay(daysEvents: ourEventObject.init(title: convertTitle(title: assignmentNameText), duration: splitTime, allDays: calendar.date(from: dates)!, end: dueDate.date))
+            todaysEvents.addDay(daysEvents: OurEventObject.init(title: convertTitle(title: assignmentNameText), duration: splitTime, dayInBetween: calendar.date(from: dates)!, end: dueDate.date))
         }
     
         

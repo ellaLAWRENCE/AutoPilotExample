@@ -18,7 +18,7 @@ class CalandarViewController: UIViewController {
 
     var theme = MyTheme.light
     @IBOutlet var addButton: UIButton!
-    
+    var day: Date = Date()
   
     
     override func viewDidLoad() {
@@ -26,12 +26,14 @@ class CalandarViewController: UIViewController {
                 self.title = "My Calender"
                 self.navigationController?.navigationBar.isTranslucent=false
                 self.view.backgroundColor=Style.bgColor
-        
+        print("hi")
+        change()
                 view.addSubview(calenderView)
                 calenderView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive=true
                 calenderView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -12).isActive=true
                 calenderView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 12).isActive=true
                 calenderView.heightAnchor.constraint(equalToConstant: 365).isActive=true
+        
         
                 let rightBarBtn = UIBarButtonItem(title: "Light", style: .plain, target: self, action: #selector(rightBarBtnAction))
                 self.navigationItem.rightBarButtonItem = rightBarBtn
@@ -45,7 +47,15 @@ class CalandarViewController: UIViewController {
         
     }
     
+    func change(){
+        print("here")
+        performSegue(withIdentifier: "goTable", sender: nil)
+        
+    }
     
+    @IBAction func changeController(_ sender: UIButton) {
+      //  performSegue(withIdentifier: "goTable", sender: self)
+    }
     
     
 

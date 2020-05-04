@@ -306,7 +306,8 @@
                                     <constraint firstAttribute="height" constant="500" id="vB8-0B-h0V"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="lCa-sf-BGa" kind="show" id="pMQ-W6-aJb"/>
+                                    <action selector="changeController:" destination="iYn-cO-6LG" eventType="touchUpInside" id="uPK-xm-3vz"/>
+                                    <segue destination="lCa-sf-BGa" kind="show" identifier="goTable" id="pMQ-W6-aJb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -323,6 +324,7 @@
                     <navigationItem key="navigationItem" id="9kr-qk-olT"/>
                     <connections>
                         <outlet property="addButton" destination="O8h-x4-T22" id="6dT-xX-5ss"/>
+                        <segue destination="lCa-sf-BGa" kind="show" identifier="change" id="LhN-6r-ELM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wat-kr-CNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -440,5 +442,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WGZ-eU-iPS"/>
+        <segue reference="LhN-6r-ELM"/>
     </inferredMetricsTieBreakers>
 </document>
