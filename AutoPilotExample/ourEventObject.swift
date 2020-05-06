@@ -9,21 +9,21 @@
 import Foundation
 class OurEventObject{
     var eventTitle = String()
-    var duration = Int()
-    var start = Date()
+    var duration = Double()
+    var dayInBetween = Date()
     var end = Date()
     
-    init(title: String, duration: Int, start: Date, end: Date){
+    init(title: String, duration: Double, dayInBetween: Date, end: Date){
         self.eventTitle = title
         self.duration = duration
-        self.start = start
+        self.dayInBetween = dayInBetween
         self.end = end
     }
     
     init(){
         self.eventTitle = " "
         self.duration = 0
-        self.start = Date()
+        self.dayInBetween = Date()
         self.end = Date()
     }
 
