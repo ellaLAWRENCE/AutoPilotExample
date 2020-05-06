@@ -12,7 +12,7 @@ class Events{
 
     static let shared = Events()
     var events = [OurEventObject]()
-    var time : [Int] = []
+    var time : [Double] = []
 
     private init(){}
 
@@ -32,11 +32,11 @@ class Events{
         return a
     }
     
-    func setTime(t: Int){
+    func setTime(t: Double){
         time.append(t)
     }
-    func getTime() -> [Int]{
-        var a : [Int] = []
+    func getTime() -> [Double]{
+        var a : [Double] = []
         var today = Date()
         var dates = DateComponents()
         

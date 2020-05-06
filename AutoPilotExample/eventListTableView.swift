@@ -29,7 +29,7 @@ class eventListTableViewData: NSObject, UITableViewDataSource{
             cell.textLabel?.font = UIFont(name: "helvetica neue", size: 40)
             cell.textLabel?.textAlignment = .center
             //cell.textLabel?.text = todayEvent.getDaysEvent(date: Date())[indexPath.row].eventTitle
-            cell.textLabel?.text = "\(todayEvent.getEvent()[indexPath.row].eventTitle) \(todayEvent.getTime()[indexPath.row]) hr"
+            cell.textLabel?.text = "\(todayEvent.getEvent()[indexPath.row].eventTitle) \(NSString(format: "%.2f", todayEvent.getTime()[indexPath.row])) hr"
             print("completed this")
             return cell
             
