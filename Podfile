@@ -11,6 +11,7 @@ target 'AutoPilotExample' do
 	pod 'Firebase/Storage'
 	pod 'Firebase/Firestore'
 	pod 'FirebaseFirestoreSwift'
+	pod 'ApiAI'
 
 
 end
