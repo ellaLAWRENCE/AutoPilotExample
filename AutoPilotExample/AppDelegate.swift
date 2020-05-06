@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import ApiAI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        
+        let configuration = AIDefaultConfiguration()
+        configuration.clientAccessToken = "7bb4882515d840b0966870c68a2d640f"
+        
+        let apiai = ApiAI.shared()
+        apiai?.configuration = configuration
         
         return true
     }
