@@ -476,7 +476,7 @@
         <!--Title-->
         <scene sceneID="aCJ-VZ-GNI">
             <objects>
-                <viewController id="QVj-np-IdL" sceneMemberID="viewController">
+                <viewController id="QVj-np-IdL" customClass="VoiceViewController" customModule="AutoPilotExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2aB-em-yez">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -493,6 +493,9 @@
                                 <state key="normal" title="Send Message">
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendMessage:" destination="QVj-np-IdL" eventType="touchUpInside" id="WP4-P8-8UL"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello! Start a conversation to add an assignment." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5M-0U-CGy">
                                 <rect key="frame" x="16" y="214" width="382" height="150"/>
@@ -523,6 +526,10 @@
                         <viewLayoutGuide key="safeArea" id="StJ-xF-WFp"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="xFa-rx-r09"/>
+                    <connections>
+                        <outlet property="botResponse" destination="H5M-0U-CGy" id="SWe-qV-6BN"/>
+                        <outlet property="messageField" destination="ztM-gs-eyv" id="7Vf-K0-CzH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fmg-A7-1Wu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
