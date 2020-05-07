@@ -73,7 +73,7 @@ class addEvent: UIViewController, UITextFieldDelegate {
     
     @IBAction func AddEvent(_ sender: UIButton) {
        var splitTime : Double
-        var totalDays : Int = calendar.component(.day, from: dueDate.date)-calendar.component(.day, from: startDate.date)+1
+        var totalDays : Int = Calendar.current.component(.day, from: dueDate.date)-Calendar.current.component(.day, from: startDate.date)+1
         splitTime = convertTime(duration: durationText)/(Double(totalDays))
         
         var today = Date()
@@ -95,11 +95,35 @@ class addEvent: UIViewController, UITextFieldDelegate {
             todaysEvents.setTime(t: splitTime)
         }
     
+    }
+    
+    func add(t: String, d: Double, s: Date, e: Date){
+        var splitTime : Double
+        var totalDays : Int = Calendar.current.component(.day, from: e)-Calendar.current.component(.day, from: s)+1
+        splitTime = d/(Double(totalDays))
         
-
+        var today = Date()
+        
+        
+        for x in 0..<Int(totalDays){
+            //var calendar = Calendar.current
+            var dates = DateComponents()
+            
+            dates.year = Calendar.current.component(.year, from: today)
+            dates.month = Calendar.current.component(.month, from: today)
+            dates.day = Calendar.current.component(.day, from: today)+x
+            dates.timeZone = TimeZone(abbreviation: "EST") // East Standard Time
+            dates.hour = Calendar.current.component(.hour, from: today)
+            dates.minute = Calendar.current.component(.minute, from: today)
             
             
-}
+            todaysEvents.addDay(daysEvents: OurEventObject.init(title: t, duration: splitTime, dayInBetween: Calendar.current.date(from: dates)!, end: e))
+            todaysEvents.setTime(t: splitTime)
+        }
+        
+        
+        
+    }
 
 }
     

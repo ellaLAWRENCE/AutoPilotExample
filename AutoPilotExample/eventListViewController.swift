@@ -13,6 +13,7 @@ class eventListViewController: UIViewController, UITableViewDelegate {
 
 
     @IBOutlet var theDate: UILabel!
+    var todaysEvents = Events.shared
     var today = Date()
     var dates = DateComponents()
     var daysUp : Int = 1
@@ -36,6 +37,7 @@ class eventListViewController: UIViewController, UITableViewDelegate {
         dates.hour = Calendar.current.component(.hour, from: today)
         dates.minute = Calendar.current.component(.minute, from: today)
 
+        todaysEvents.create()
 //        theDate.text = "\(String(describing: dates.month))/\(String(describing: dates.day))/\(String(describing: dates.year))"
     }
     

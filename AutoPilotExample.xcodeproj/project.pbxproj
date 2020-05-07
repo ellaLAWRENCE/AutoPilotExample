@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		09209A3A245B015E005E6BFD /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09209A39245B015E005E6BFD /* Events.swift */; };
-		235435D52459F7EA00347BFD /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235435D42459F7EA00347BFD /* CalendarVars.swift */; };
-		235435D72459FC0C00347BFD /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235435D62459FC0C00347BFD /* DateCollectionViewCell.swift */; };
 		23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */; };
 		23B4B3AE23FD64CC0015AF84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */; };
 		23B4B3B323FD64CC0015AF84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B4B3B123FD64CC0015AF84 /* Main.storyboard */; };
@@ -22,16 +20,12 @@
 		23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */; };
 		23C10C032406CB6600F9EC79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23C10C022406CB6600F9EC79 /* GoogleService-Info.plist */; };
 		23F19A0D244E73FC00D7DFC4 /* DaysEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F19A0C244E73FC00D7DFC4 /* DaysEvents.swift */; };
-		23FA1D4B2436DFDC003C1CD9 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4A2436DFDC003C1CD9 /* MonthView.swift */; };
-		23FA1D4D2436E00E003C1CD9 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */; };
-		23FA1D4F2436E046003C1CD9 /* CalandarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */; };
-		23FA1D512436E1E3003C1CD9 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA1D502436E1E3003C1CD9 /* CalendarView.swift */; };
 		48509E322416782C00CA622E /* eventListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48509E312416782C00CA622E /* eventListTableView.swift */; };
 		4856554924127F5B005560A2 /* eventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856554824127F5B005560A2 /* eventListViewController.swift */; };
 		4856554B2412817B005560A2 /* ourEventObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4856554A2412817B005560A2 /* ourEventObject.swift */; };
 		485DBA4F240812C5003156D1 /* addEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DBA4E240812C5003156D1 /* addEvent.swift */; };
-		6727331FABAD3B843A7D68BD /* Pods_AutoPilotExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF5A26904656A8B6B82F583 /* Pods_AutoPilotExample.framework */; };
 		AA6B47F1246375F100D6E7C9 /* VoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6B47F0246375F100D6E7C9 /* VoiceViewController.swift */; };
+		B67DEEE88ADFB60FD212BAD8 /* Pods_AutoPilotExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480D3270FF26FF83EA2CBBCF /* Pods_AutoPilotExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +47,7 @@
 
 /* Begin PBXFileReference section */
 		09209A39245B015E005E6BFD /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
-		1FF5A26904656A8B6B82F583 /* Pods_AutoPilotExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPilotExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		235435D42459F7EA00347BFD /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
-		235435D62459FC0C00347BFD /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		168E85757572E28A1174E69D /* Pods-AutoPilotExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPilotExample.debug.xcconfig"; path = "Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample.debug.xcconfig"; sourceTree = "<group>"; };
 		23B4B3A823FD64CC0015AF84 /* AutoPilotExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPilotExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,18 +66,14 @@
 		23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		23C10C022406CB6600F9EC79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		23F19A0C244E73FC00D7DFC4 /* DaysEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysEvents.swift; sourceTree = "<group>"; };
-		23FA1D4A2436DFDC003C1CD9 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
-		23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
-		23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalandarViewController.swift; sourceTree = "<group>"; };
-		23FA1D502436E1E3003C1CD9 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = ../CalendarView.swift; sourceTree = "<group>"; };
+		480D3270FF26FF83EA2CBBCF /* Pods_AutoPilotExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPilotExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48509E312416782C00CA622E /* eventListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventListTableView.swift; sourceTree = "<group>"; };
 		4856554724127EAC005560A2 /* eventList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = eventList.storyboard; path = /Users/s014294/Desktop/CompsciSeminar/AutoPilotExample/AutoPilotExample/eventList.storyboard; sourceTree = "<absolute>"; };
 		4856554824127F5B005560A2 /* eventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventListViewController.swift; sourceTree = "<group>"; };
 		4856554A2412817B005560A2 /* ourEventObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ourEventObject.swift; sourceTree = "<group>"; };
 		485DBA4E240812C5003156D1 /* addEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEvent.swift; sourceTree = "<group>"; };
-		9B55504453429E762725F7E3 /* Pods-AutoPilotExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPilotExample.release.xcconfig"; path = "Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample.release.xcconfig"; sourceTree = "<group>"; };
+		866C194C0ACACD13DE722914 /* Pods-AutoPilotExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPilotExample.release.xcconfig"; path = "Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample.release.xcconfig"; sourceTree = "<group>"; };
 		AA6B47F0246375F100D6E7C9 /* VoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceViewController.swift; sourceTree = "<group>"; };
-		F8E081E1F3FD40CAF16A06EE /* Pods-AutoPilotExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPilotExample.debug.xcconfig"; path = "Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6727331FABAD3B843A7D68BD /* Pods_AutoPilotExample.framework in Frameworks */,
+				B67DEEE88ADFB60FD212BAD8 /* Pods_AutoPilotExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DB08C99DA6B44BEF3F240A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				480D3270FF26FF83EA2CBBCF /* Pods_AutoPilotExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		23B4B39F23FD64CC0015AF84 = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +118,7 @@
 				23B4B3CC23FD64D60015AF84 /* AutoPilotExampleUITests */,
 				23B4B3A923FD64CC0015AF84 /* Products */,
 				2BFF2E8FF46F3C33DA34CDF8 /* Pods */,
-				FBC164E276ED6AA381B3481A /* Frameworks */,
+				0DB08C99DA6B44BEF3F240A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,10 +137,6 @@
 			children = (
 				AA6B47F0246375F100D6E7C9 /* VoiceViewController.swift */,
 				4856554724127EAC005560A2 /* eventList.storyboard */,
-				23FA1D4A2436DFDC003C1CD9 /* MonthView.swift */,
-				23FA1D4C2436E00E003C1CD9 /* WeekdayView.swift */,
-				23FA1D502436E1E3003C1CD9 /* CalendarView.swift */,
-				23FA1D4E2436E046003C1CD9 /* CalandarViewController.swift */,
 				485DBA4E240812C5003156D1 /* addEvent.swift */,
 				4856554824127F5B005560A2 /* eventListViewController.swift */,
 				48509E312416782C00CA622E /* eventListTableView.swift */,
@@ -161,8 +153,6 @@
 				23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */,
 				23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */,
 				23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */,
-				235435D42459F7EA00347BFD /* CalendarVars.swift */,
-				235435D62459FC0C00347BFD /* DateCollectionViewCell.swift */,
 			);
 			path = AutoPilotExample;
 			sourceTree = "<group>";
@@ -188,18 +178,10 @@
 		2BFF2E8FF46F3C33DA34CDF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F8E081E1F3FD40CAF16A06EE /* Pods-AutoPilotExample.debug.xcconfig */,
-				9B55504453429E762725F7E3 /* Pods-AutoPilotExample.release.xcconfig */,
+				168E85757572E28A1174E69D /* Pods-AutoPilotExample.debug.xcconfig */,
+				866C194C0ACACD13DE722914 /* Pods-AutoPilotExample.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		FBC164E276ED6AA381B3481A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1FF5A26904656A8B6B82F583 /* Pods_AutoPilotExample.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,11 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23B4B3D223FD64D60015AF84 /* Build configuration list for PBXNativeTarget "AutoPilotExample" */;
 			buildPhases = (
-				A2B3F0D8F1C3F44E0AA85B8A /* [CP] Check Pods Manifest.lock */,
+				E942225E5946CAF19458E651 /* [CP] Check Pods Manifest.lock */,
 				23B4B3A423FD64CC0015AF84 /* Sources */,
 				23B4B3A523FD64CC0015AF84 /* Frameworks */,
 				23B4B3A623FD64CC0015AF84 /* Resources */,
-				07A44A2D786E14497B7414E7 /* [CP] Embed Pods Frameworks */,
+				0AB9CEE4A67A498CAF3D03F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -332,7 +314,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07A44A2D786E14497B7414E7 /* [CP] Embed Pods Frameworks */ = {
+		0AB9CEE4A67A498CAF3D03F2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -349,7 +331,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A2B3F0D8F1C3F44E0AA85B8A /* [CP] Check Pods Manifest.lock */ = {
+		E942225E5946CAF19458E651 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,19 +361,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				23F19A0D244E73FC00D7DFC4 /* DaysEvents.swift in Sources */,
-				23FA1D4F2436E046003C1CD9 /* CalandarViewController.swift in Sources */,
-				23FA1D4B2436DFDC003C1CD9 /* MonthView.swift in Sources */,
-				235435D52459F7EA00347BFD /* CalendarVars.swift in Sources */,
-				23FA1D4D2436E00E003C1CD9 /* WeekdayView.swift in Sources */,
 				AA6B47F1246375F100D6E7C9 /* VoiceViewController.swift in Sources */,
 				23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */,
-				23FA1D512436E1E3003C1CD9 /* CalendarView.swift in Sources */,
 				23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */,
 				485DBA4F240812C5003156D1 /* addEvent.swift in Sources */,
 				23C10BF72406AF2500F9EC79 /* ViewController.swift in Sources */,
 				4856554924127F5B005560A2 /* eventListViewController.swift in Sources */,
 				48509E322416782C00CA622E /* eventListTableView.swift in Sources */,
-				235435D72459FC0C00347BFD /* DateCollectionViewCell.swift in Sources */,
 				4856554B2412817B005560A2 /* ourEventObject.swift in Sources */,
 				09209A3A245B015E005E6BFD /* Events.swift in Sources */,
 				23C10BF92406AF3A00F9EC79 /* LoginViewController.swift in Sources */,
@@ -566,7 +542,7 @@
 		};
 		23B4B3D323FD64D60015AF84 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8E081E1F3FD40CAF16A06EE /* Pods-AutoPilotExample.debug.xcconfig */;
+			baseConfigurationReference = 168E85757572E28A1174E69D /* Pods-AutoPilotExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -585,7 +561,7 @@
 		};
 		23B4B3D423FD64D60015AF84 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B55504453429E762725F7E3 /* Pods-AutoPilotExample.release.xcconfig */;
+			baseConfigurationReference = 866C194C0ACACD13DE722914 /* Pods-AutoPilotExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

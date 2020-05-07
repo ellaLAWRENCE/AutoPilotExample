@@ -14,7 +14,13 @@ class Events{
     var events = [OurEventObject]()
     var time : [Double] = []
 
-    private init(){}
+    var dates = DateComponents()
+    var today = Date()
+   
+    
+    private init(){
+        
+    }
 
     func addDay(daysEvents : OurEventObject){
         events.append(daysEvents)
@@ -93,6 +99,33 @@ class Events{
         }
         
         return a
+    }
+    
+    
+    
+    
+    func create() {
+        dates.year = Calendar.current.component(.year, from: today)
+        dates.month = Calendar.current.component(.month, from: today)
+        dates.day = Calendar.current.component(.day, from: today)+4
+        dates.timeZone = TimeZone(abbreviation: "EST") // East Standard Time
+        dates.hour = Calendar.current.component(.hour, from: today)
+        dates.minute = Calendar.current.component(.minute, from: today)
+           
+           
+        addEvent().add(t: "Spanish Project", d: 7.0, s: today, e: Calendar.current.date(from: dates)!)
+        dates.day = Calendar.current.component(.day, from: today)+9
+        addEvent().add(t: "Physics Project", d: 7.0, s: today, e: Calendar.current.date(from: dates)!)
+        dates.day = Calendar.current.component(.day, from: today)+3
+        addEvent().add(t: "Math Homework", d: 7.0, s: today, e: Calendar.current.date(from: dates)!)
+        dates.day = Calendar.current.component(.day, from: today)+1
+        addEvent().add(t: "Spanish Homework", d: 7.0, s: today, e: Calendar.current.date(from: dates)!)
+        dates.day = Calendar.current.component(.day, from: today)+7
+        addEvent().add(t: "Study for History", d: 7.0, s: today, e: Calendar.current.date(from: dates)!)
+        dates.day = Calendar.current.component(.day, from: today)+8
+        addEvent().add(t: "Read Ch 5", d: 7.0, s: today, e: Calendar.current.date(from: dates)!)
+        dates.day = Calendar.current.component(.day, from: today)+21
+        addEvent().add(t: "English Essay", d: 7.0, s: today, e: Calendar.current.date(from: dates)!)
     }
 
 }
