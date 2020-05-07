@@ -93,6 +93,7 @@ class addEvent: UIViewController, UITextFieldDelegate {
             
             todaysEvents.addDay(daysEvents: OurEventObject.init(title: convertTitle(title: assignmentNameText), duration: splitTime, dayInBetween: Calendar.current.date(from: dates)!, end: dueDate.date))
             todaysEvents.setTime(t: splitTime)
+            todaysEvents.reset()
         }
     
     }

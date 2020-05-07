@@ -11,9 +11,10 @@ import EventKit
 
 class eventListViewController: UIViewController, UITableViewDelegate {
 
-    var timer = Stopwatch()
     var running = false
     
+    
+    @IBOutlet var mentalHealthBreak: UILabel!
     @IBOutlet var workingOnLabel: UILabel!
     @IBOutlet var theDate: UILabel!
    
@@ -46,10 +47,14 @@ class eventListViewController: UIViewController, UITableViewDelegate {
         dates.hour = Calendar.current.component(.hour, from: today)
         dates.minute = Calendar.current.component(.minute, from: today)
         
-
+       
         
-
-        todaysEvents.create()
+        if todaysEvents.getDaysEvent(date: changingDay.getDay()).isEmpty{
+            todaysEvents.create()
+        }
+        mentalHealthBreak.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+        mentalHealthBreak.textColor = UIColor.white
+        
     }
     
     
@@ -62,7 +67,7 @@ class eventListViewController: UIViewController, UITableViewDelegate {
         theDate.text = formatter1.string(from: Calendar.current.date(from: dates)!)
 
         change.changeDay(change: dates)
-        workingOnLabel.text = "Currently Working On: "
+        workingOnLabel.text = "   "
         todaysEvents.reset()
         table.reloadData()
 
@@ -79,7 +84,7 @@ class eventListViewController: UIViewController, UITableViewDelegate {
         theDate.text = formatter1.string(from: Calendar.current.date(from: dates)!)
         
         change.changeDay(change: dates)
-        workingOnLabel.text = "Currently Working On: "
+        workingOnLabel.text = "   "
         todaysEvents.reset()
         table.reloadData()
 
@@ -89,7 +94,7 @@ class eventListViewController: UIViewController, UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        workingOnLabel.text = "Currently Working On: \(todaysEvents.getDaysEvent(date: changingDay.getDay())[indexPath.row].eventTitle)"
+        workingOnLabel.text = "\(todaysEvents.getDaysEvent(date: changingDay.getDay())[indexPath.row].eventTitle)"
         
         
         

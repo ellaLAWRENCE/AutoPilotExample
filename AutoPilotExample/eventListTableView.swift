@@ -15,10 +15,8 @@ class eventListTableViewData: NSObject, UITableViewDataSource{
     // I could be wrong but it seems like your constructing a todaysEvents object here and trying to getEvents, but this object will not have any events. There doesn't seem to  be a 'connection' between this object and the todaysEvents in eventListViewController. So what I think is happening is that you initialize a new todaysEvents object here, which would have an empty array. What you think is happening is that you're getting a reference to the same todaysEvents object that you use elsewhere. What you'll need to do is create a single todaysEvents object that you reference from all classes throughout your project.
         var todayEvent = Events.shared
         var day = DateShowing.shared
-    //var days : Date
         
         override init(){
-            //day = eventListViewController().
         }
         
         
@@ -30,7 +28,7 @@ class eventListTableViewData: NSObject, UITableViewDataSource{
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = UITableViewCell()
             cell.textLabel?.font = UIFont(name: "helvetica neue", size: 20)
-            cell.textLabel?.textAlignment = .center
+            cell.textLabel?.textAlignment = .left
             cell.textLabel?.text = "\(todayEvent.getDaysEvent(date: day.getDay())[indexPath.row].eventTitle) \(todayEvent.time(date: day.getDay(),row: indexPath.row))"
             return cell
             

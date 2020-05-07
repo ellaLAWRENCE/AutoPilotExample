@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		09209A3A245B015E005E6BFD /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09209A39245B015E005E6BFD /* Events.swift */; };
 		2359540424639A2200BDE6DD /* DateShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2359540324639A2200BDE6DD /* DateShowing.swift */; };
-		235954062463A65600BDE6DD /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235954052463A65600BDE6DD /* Stopwatch.swift */; };
 		23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */; };
 		23B4B3AE23FD64CC0015AF84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */; };
 		23B4B3B323FD64CC0015AF84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B4B3B123FD64CC0015AF84 /* Main.storyboard */; };
@@ -51,7 +50,6 @@
 		09209A39245B015E005E6BFD /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		168E85757572E28A1174E69D /* Pods-AutoPilotExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPilotExample.debug.xcconfig"; path = "Target Support Files/Pods-AutoPilotExample/Pods-AutoPilotExample.debug.xcconfig"; sourceTree = "<group>"; };
 		2359540324639A2200BDE6DD /* DateShowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateShowing.swift; sourceTree = "<group>"; };
-		235954052463A65600BDE6DD /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		23B4B3A823FD64CC0015AF84 /* AutoPilotExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPilotExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 				23C10BFA2406AF4A00F9EC79 /* SignInViewController.swift */,
 				23B4B3AB23FD64CC0015AF84 /* AppDelegate.swift */,
 				23B4B3AD23FD64CC0015AF84 /* SceneDelegate.swift */,
-				235954052463A65600BDE6DD /* Stopwatch.swift */,
 			);
 			path = AutoPilotExample;
 			sourceTree = "<group>";
@@ -371,7 +368,6 @@
 				23B4B3AC23FD64CC0015AF84 /* AppDelegate.swift in Sources */,
 				23C10BFB2406AF4A00F9EC79 /* SignInViewController.swift in Sources */,
 				485DBA4F240812C5003156D1 /* addEvent.swift in Sources */,
-				235954062463A65600BDE6DD /* Stopwatch.swift in Sources */,
 				2359540424639A2200BDE6DD /* DateShowing.swift in Sources */,
 				23C10BF72406AF2500F9EC79 /* ViewController.swift in Sources */,
 				4856554924127F5B005560A2 /* eventListViewController.swift in Sources */,
