@@ -14,13 +14,16 @@ class eventListTableViewData: NSObject, UITableViewDataSource{
     // where is todayEvents() initialized. This would seem to be an empty or even nil object?
     // I could be wrong but it seems like your constructing a todaysEvents object here and trying to getEvents, but this object will not have any events. There doesn't seem to  be a 'connection' between this object and the todaysEvents in eventListViewController. So what I think is happening is that you initialize a new todaysEvents object here, which would have an empty array. What you think is happening is that you're getting a reference to the same todaysEvents object that you use elsewhere. What you'll need to do is create a single todaysEvents object that you reference from all classes throughout your project.
         var todayEvent = Events.shared
+        var day = DateShowing.shared
+    //var days : Date
         
         override init(){
+            //day = eventListViewController().
         }
         
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return todayEvent.getEvent().count
+            return todayEvent.getDaysEvent(date: day.getDay()).count
             //return todayEvent.getDaysEvent(date: Date()).count
         }
         
@@ -28,9 +31,7 @@ class eventListTableViewData: NSObject, UITableViewDataSource{
             let cell = UITableViewCell()
             cell.textLabel?.font = UIFont(name: "helvetica neue", size: 20)
             cell.textLabel?.textAlignment = .center
-            //cell.textLabel?.text = todayEvent.getDaysEvent(date: Date())[indexPath.row].eventTitle
-            cell.textLabel?.text = "\(todayEvent.getEvent()[indexPath.row].eventTitle) \(NSString(format: "%.2f", todayEvent.getTime()[indexPath.row])) hr"
-            print("completed this")
+            cell.textLabel?.text = "\(todayEvent.getDaysEvent(date: day.getDay())[indexPath.row].eventTitle) \(todayEvent.time(date: day.getDay(),row: indexPath.row))"
             return cell
             
         }

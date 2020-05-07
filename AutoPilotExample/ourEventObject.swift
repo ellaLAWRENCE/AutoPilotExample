@@ -26,5 +26,7 @@ class OurEventObject{
         self.dayInBetween = Date()
         self.end = Date()
     }
+    
+    
 
 }

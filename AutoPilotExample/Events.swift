@@ -14,13 +14,14 @@ class Events{
     var events = [OurEventObject]()
     var time : [Double] = []
 
+    
     var dates = DateComponents()
     var today = Date()
-   
+    var length = 0.0
+    var beforeHours = 9
+    var beforeMin = 00
     
-    private init(){
-        
-    }
+    private init(){}
 
     func addDay(daysEvents : OurEventObject){
         events.append(daysEvents)
@@ -28,30 +29,46 @@ class Events{
 
     func getDaysEvent(date : Date) -> [OurEventObject]{
         var a : [OurEventObject] = []
-    
+        var dates = DateComponents()
+        
+        dates.year = Calendar.current.component(.year, from: date)
+        dates.month = Calendar.current.component(.month, from: date)
+        dates.day = Calendar.current.component(.day, from: date)
+        dates.timeZone = TimeZone(abbreviation: "EST") // East Standard Time
+        dates.hour = Calendar.current.component(.hour, from: date)
+        dates.minute = Calendar.current.component(.minute, from: date)
+        
+        var compare = DateComponents()
+        
         for x in 0..<events.count{
-            if events[x].dayInBetween == date{
+            compare.year = Calendar.current.component(.year, from: events[x].dayInBetween)
+            compare.month = Calendar.current.component(.month, from: events[x].dayInBetween)
+            compare.day = Calendar.current.component(.day, from: events[x].dayInBetween)
+            compare.timeZone = TimeZone(abbreviation: "EST") // East Standard Time
+            compare.hour = Calendar.current.component(.hour, from: events[x].dayInBetween)
+            compare.minute = Calendar.current.component(.minute, from: events[x].dayInBetween)
+            
+            if compare.day == dates.day{
                 a.append(events[x])
             }
         }
-    
+        
         return a
     }
     
     func setTime(t: Double){
         time.append(t)
     }
-    func getTime() -> [Double]{
+    func getTime(date : Date) -> [Double]{
         var a : [Double] = []
-        var today = Date()
         var dates = DateComponents()
         
-        dates.year = Calendar.current.component(.year, from: today)
-        dates.month = Calendar.current.component(.month, from: today)
-        dates.day = Calendar.current.component(.day, from: today)
+        dates.year = Calendar.current.component(.year, from: date)
+        dates.month = Calendar.current.component(.month, from: date)
+        dates.day = Calendar.current.component(.day, from: date)
         dates.timeZone = TimeZone(abbreviation: "EST") // East Standard Time
-        dates.hour = Calendar.current.component(.hour, from: today)
-        dates.minute = Calendar.current.component(.minute, from: today)
+        dates.hour = Calendar.current.component(.hour, from: date)
+        dates.minute = Calendar.current.component(.minute, from: date)
         
         var compare = DateComponents()
         
@@ -71,35 +88,6 @@ class Events{
         return a
     }
     
-    func getEvent() -> [OurEventObject]{
-        var a : [OurEventObject] = []
-        var today = Date()
-        var dates = DateComponents()
-        
-        dates.year = Calendar.current.component(.year, from: today)
-        dates.month = Calendar.current.component(.month, from: today)
-        dates.day = Calendar.current.component(.day, from: today)
-        dates.timeZone = TimeZone(abbreviation: "EST") // East Standard Time
-        dates.hour = Calendar.current.component(.hour, from: today)
-        dates.minute = Calendar.current.component(.minute, from: today)
-        
-        var compare = DateComponents()
-        
-        for x in 0..<events.count{
-            compare.year = Calendar.current.component(.year, from: events[x].dayInBetween)
-            compare.month = Calendar.current.component(.month, from: events[x].dayInBetween)
-            compare.day = Calendar.current.component(.day, from: events[x].dayInBetween)
-            compare.timeZone = TimeZone(abbreviation: "EST") // East Standard Time
-            compare.hour = Calendar.current.component(.hour, from: events[x].dayInBetween)
-            compare.minute = Calendar.current.component(.minute, from: events[x].dayInBetween)
-            
-            if compare.day == dates.day{
-                a.append(events[x])
-            }
-        }
-        
-        return a
-    }
     
     
     
@@ -128,4 +116,41 @@ class Events{
         addEvent().add(t: "English Essay", d: 7.0, s: today, e: Calendar.current.date(from: dates)!)
     }
 
+    
+    func time(date: Date, row: Int) -> String{
+        var s = ""
+        if row == 0{
+            s = "9:00"
+            length = getDaysEvent(date: date)[row].duration
+            
+        }
+        else{
+            var hours = (Int(length*60))/60
+            var min = Int(length*60)%60
+            
+            if min+beforeMin >= 60{
+                hours += (min+beforeMin)/60
+                min = (min+beforeMin)%60
+            }
+            
+            if min < 10{
+                s = "\(beforeHours+hours):0\(min)"
+            }
+            else{
+               s = "\(beforeHours+hours):\(min)"
+            }
+            beforeHours = beforeHours+hours
+            beforeMin = min
+            length = getDaysEvent(date: date)[row].duration
+        }
+        
+        
+        return s
+    }
+   
+    func reset(){
+        beforeHours = 9
+        beforeMin = 00
+        length = 0.0
+    }
 }
