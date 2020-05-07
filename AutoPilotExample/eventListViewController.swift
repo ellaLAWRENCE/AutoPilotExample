@@ -11,8 +11,12 @@ import EventKit
 
 class eventListViewController: UIViewController, UITableViewDelegate {
 
-    var running = false
+    var count = 0
+//    var timer :Timer = Timer
+
     
+    
+    var breakOptions : [String] = []
     
     @IBOutlet var mentalHealthBreak: UILabel!
     @IBOutlet var workingOnLabel: UILabel!
@@ -55,6 +59,30 @@ class eventListViewController: UIViewController, UITableViewDelegate {
         mentalHealthBreak.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
         mentalHealthBreak.textColor = UIColor.white
         
+        breakOptions.append("Take a break to walk around")
+        breakOptions.append("Stand up and stretch")
+        breakOptions.append("Take ten deep breaths and meditate")
+        breakOptions.append("Talk to a friend")
+        breakOptions.append("Ingage in a quick easy craft")
+        breakOptions.append("Drink a glass of water")
+        breakOptions.append("Have a laugh... Someone stole my mood ring, I don't know how I feel about that")
+        breakOptions.append("Have a laugh... I tried to catch fog yesterday, Mist")
+        breakOptions.append("Have a laugh... What did the pirate say when he turned 80? Aye Matey")
+        
+//        timer = Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(implementBreak), userInfo: nil, repeats: true)
+        
+        Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { timer in
+            self.count += 1
+            
+            if self.count%45 == 0{
+                self.mentalHealthBreak.isHidden = false
+                self.mentalHealthBreak.text = self.breakOptions[Int.random(in: 0..<9)]
+            }
+            else if self.count%50 == 0{
+                self.mentalHealthBreak.isHidden = true
+                self.count = 0
+            }
+        }
     }
     
     
@@ -88,7 +116,7 @@ class eventListViewController: UIViewController, UITableViewDelegate {
         todaysEvents.reset()
         table.reloadData()
 
-        //theDate.text = "\(String(describing: dates.month))/\(String(describing: dates.day))/\(String(describing: dates.year))"
+        
         
     }
     
@@ -100,30 +128,6 @@ class eventListViewController: UIViewController, UITableViewDelegate {
         
     }
     
-    
-//    func timer(row: Int){
-//        var hours : Double = todaysEvents.getDaysEvent(date: changingDay.getDay())[row].duration
-//
-//        var min = hours*60
-//        
-//
-//        if running == false {
-//            timer.start()
-//            running = true
-//            print("start")
-//        }
-//        else{
-//            timer.stop()
-//            var timeElapsed : Double = Double(timer.elapsedTime)
-//            todaysEvents.editTime(date: changingDay.getDay(), row: row, time: (timeElapsed/60.0)/60.0)
-////            //todaysEvents.getDaysEvent(date: changingDay.getDay())[row].duration -= (timer.elapsedTime/60)/60
-//            print("stop")
-//            print(todaysEvents.getDaysEvent(date: changingDay.getDay())[row].duration)
-//            running = false
-//            table.reloadData()
-//           // table.beginUpdates()
-//        }
-//
-//    }
+   
     
 }

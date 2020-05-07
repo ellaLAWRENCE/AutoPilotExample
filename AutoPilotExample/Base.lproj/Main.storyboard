@@ -334,13 +334,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHI-0g-eUL">
-                                <rect key="frame" x="107" y="371" width="200" height="100"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHI-0g-eUL">
+                                <rect key="frame" x="57" y="321" width="300" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="DOL-Xy-cTG"/>
-                                    <constraint firstAttribute="width" constant="200" id="Wzm-a1-fPL"/>
+                                    <constraint firstAttribute="height" constant="200" id="DOL-Xy-cTG"/>
+                                    <constraint firstAttribute="width" constant="300" id="Wzm-a1-fPL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
