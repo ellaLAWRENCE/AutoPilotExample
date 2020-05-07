@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lCa-sf-BGa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lCa-sf-BGa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -520,7 +520,7 @@
                                     <action selector="sendMessage:" destination="QVj-np-IdL" eventType="touchUpInside" id="WP4-P8-8UL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello! Start a conversation to add an assignment." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5M-0U-CGy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello! Start a conversation to add an assignment." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5M-0U-CGy">
                                 <rect key="frame" x="16" y="214" width="382" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="j6P-le-mUJ"/>
@@ -529,18 +529,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMd-6q-XC5">
+                                <rect key="frame" x="100" y="683" width="214" height="33"/>
+                                <color key="backgroundColor" red="0.0" green="0.56442599829999995" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Go Home">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMessage:" destination="QVj-np-IdL" eventType="touchUpInside" id="kFd-tG-0O8"/>
+                                    <segue destination="lCa-sf-BGa" kind="show" id="Awd-mK-IiX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="mUz-Br-Tof" firstAttribute="leading" secondItem="StJ-xF-WFp" secondAttribute="leading" constant="75" id="AA9-aw-IXi"/>
+                            <constraint firstItem="LMd-6q-XC5" firstAttribute="centerX" secondItem="2aB-em-yez" secondAttribute="centerX" id="H4V-p9-FVK"/>
                             <constraint firstItem="mUz-Br-Tof" firstAttribute="top" secondItem="ztM-gs-eyv" secondAttribute="bottom" constant="8" id="IXD-L2-dPR"/>
                             <constraint firstItem="ztM-gs-eyv" firstAttribute="leading" secondItem="StJ-xF-WFp" secondAttribute="leading" constant="16" id="InZ-Vl-mpo"/>
                             <constraint firstItem="StJ-xF-WFp" firstAttribute="trailing" secondItem="H5M-0U-CGy" secondAttribute="trailing" constant="16" id="NOq-y3-hPT"/>
                             <constraint firstItem="H5M-0U-CGy" firstAttribute="leading" secondItem="StJ-xF-WFp" secondAttribute="leading" constant="16" id="QOI-na-Xel"/>
                             <constraint firstItem="ztM-gs-eyv" firstAttribute="centerX" secondItem="2aB-em-yez" secondAttribute="centerX" id="QWT-iQ-6jd"/>
+                            <constraint firstItem="LMd-6q-XC5" firstAttribute="leading" secondItem="StJ-xF-WFp" secondAttribute="leading" constant="100" id="RUy-vl-WFe"/>
                             <constraint firstItem="mUz-Br-Tof" firstAttribute="centerX" secondItem="2aB-em-yez" secondAttribute="centerX" id="Rmq-0o-ioq"/>
                             <constraint firstItem="StJ-xF-WFp" firstAttribute="trailing" secondItem="mUz-Br-Tof" secondAttribute="trailing" constant="75" id="XwR-5S-MXz"/>
+                            <constraint firstItem="StJ-xF-WFp" firstAttribute="trailing" secondItem="LMd-6q-XC5" secondAttribute="trailing" constant="100" id="Y6r-p4-6Do"/>
                             <constraint firstItem="ztM-gs-eyv" firstAttribute="centerY" secondItem="2aB-em-yez" secondAttribute="centerY" id="ZO6-MN-49c"/>
+                            <constraint firstItem="StJ-xF-WFp" firstAttribute="bottom" secondItem="LMd-6q-XC5" secondAttribute="bottom" constant="92" id="aYO-TF-raL"/>
                             <constraint firstItem="H5M-0U-CGy" firstAttribute="centerX" secondItem="2aB-em-yez" secondAttribute="centerX" id="bSL-PH-DrF"/>
                             <constraint firstItem="mUz-Br-Tof" firstAttribute="top" secondItem="ztM-gs-eyv" secondAttribute="bottom" constant="8" id="dzO-bx-lmS"/>
                             <constraint firstItem="H5M-0U-CGy" firstAttribute="top" secondItem="StJ-xF-WFp" secondAttribute="top" constant="214" id="nob-FW-g2x"/>
@@ -565,6 +581,6 @@
         <image name="line" width="644" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VgT-S6-phE"/>
+        <segue reference="Awd-mK-IiX"/>
     </inferredMetricsTieBreakers>
 </document>
